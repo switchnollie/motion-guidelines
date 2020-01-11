@@ -4,7 +4,9 @@ import Column from "./components/Column";
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Column highlightBackground></Column>
+      <Column highlightBackground>
+        <h1>Motion Guidelines</h1>
+      </Column>
       <Column />
       <Column />
     </div>
