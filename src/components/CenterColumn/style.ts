@@ -16,3 +16,11 @@ export const StyledDivider = styled(Divider)`
     box-sizing: border-box;
   `}
 `;
+
+export const TopContainer = styled.div`
+  display: flex;
+  align-items: center;
+  h2 {
+    flex: 1;
+  }
+`;
