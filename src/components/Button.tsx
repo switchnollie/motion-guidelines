@@ -1,4 +1,4 @@
-import React, { useState, ReactElement } from "react";
+import React, { useState, ReactElement, CSSProperties } from "react";
 import styled, { css } from "styled-components";
 import { darken } from "polished";
 import { useSpring, animated } from "react-spring";
@@ -28,9 +28,11 @@ const upConfig = { mass: 1, tension: 300, friction: 10 };
 
 interface Props {
   children: ReactElement | string;
+  style?: CSSProperties;
+  className?: string;
 }
 
-export default function Button({ children, ...props }: Props) {
+export default function Button({ children, style, ...props }: Props) {
   const [isPressed, setIsPressed] = useState(false);
   const { scale } = useSpring(
     isPressed
@@ -42,7 +44,7 @@ export default function Button({ children, ...props }: Props) {
       {...props}
       onMouseDown={() => setIsPressed(true)}
       onMouseUp={() => setIsPressed(false)}
-      style={{ transform: scale.interpolate(x => `scale(${x})`) }}
+      style={{ transform: scale.interpolate(x => `scale(${x})`), ...style }}
     >
       {children}
     </StyledButton>

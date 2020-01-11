@@ -23,6 +23,8 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: ${theme.fontPrimary};
+    overflow: hidden;
+    font-size: 12px;
   }
   .App {
     display: flex;
