@@ -1,10 +1,18 @@
 import { createGlobalStyle } from "styled-components";
+import { transparentize } from "polished";
+
+const fontInverse = "#FFF";
+const accentColor = "#647FFF";
+const fontPrimary = "rgba(52,61,102,0.5)";
 
 const theme = {
-  accentColor: "#647FFF",
-  fontPrimary: "rgba(52,61,102,0.5)",
-  fontInverse: "#FFF",
-  pageBackground: "#FFF"
+  accentColor,
+  fontPrimary,
+  fontSecondary: transparentize(0.34, fontPrimary),
+  fontInverse,
+  fontInverseSecondary: transparentize(0.68, fontInverse),
+  pageBackground: "#FFF",
+  columnPadding: "40px"
 };
 
 export const GlobalStyle = createGlobalStyle`

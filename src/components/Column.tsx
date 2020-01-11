@@ -4,8 +4,9 @@ const Column = styled.div<{ highlightBackground?: boolean }>`
   ${({ highlightBackground, theme }) => css`
     height: 100vh;
     flex: 1;
+    position: relative;
     box-sizing: border-box;
-    padding: 40px;
+    padding: ${theme.columnPadding};
     background-color: ${highlightBackground
       ? theme.accentColor
       : theme.pageBackground};
