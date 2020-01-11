@@ -6,6 +6,7 @@ const App: React.FC = () => {
     <div className="App">
       <Column highlightBackground>
         <h1>Motion Guidelines</h1>
+        <h2>Kognitive Grundlagen</h2>
       </Column>
       <Column />
       <Column />

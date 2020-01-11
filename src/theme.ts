@@ -10,7 +10,7 @@ const theme = {
 export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
-    font-family: "Univers LT Std", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: 'Univers', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -20,12 +20,24 @@ export const GlobalStyle = createGlobalStyle`
   } 
 
   h1 {
-    font-family: UniversLTStd-Black;
     font-size: 48px;
+    font-weight: 800;
     text-transform: uppercase;
     color: ${theme.fontInverse};
     letter-spacing: 1.42px;
     line-height: 1em;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    font-weight: 200;
+    font-size: 20px;
+    color: ${theme.fontInverse};
+    letter-spacing: -0.14px;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
   }
 `;
 

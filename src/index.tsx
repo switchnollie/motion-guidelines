@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+import "./fonts.css";
 import * as serviceWorker from "./serviceWorker";
 import { ThemeProvider } from "styled-components";
 import theme, { GlobalStyle } from "./theme";
