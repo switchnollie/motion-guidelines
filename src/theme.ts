@@ -9,15 +9,14 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
+  .App {
+    display: flex;
+  } 
 `;
 
 const theme = {
-  accentColor: "#647FFF"
+  accentColor: "#647FFF",
+  pageBackground: "#FFF"
 };
 
 export default theme;
