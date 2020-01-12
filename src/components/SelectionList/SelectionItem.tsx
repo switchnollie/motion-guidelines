@@ -22,7 +22,7 @@ export default function SelectionItem({
   };
   return (
     <Item onClick={handleChange} selected={selected}>
-      <ItemTitle>{title}</ItemTitle>
+      <ItemTitle>{`${title}:`}</ItemTitle>
       <ItemSubtitle>{subtitle}</ItemSubtitle>
     </Item>
   );

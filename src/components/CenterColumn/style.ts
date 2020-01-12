@@ -2,9 +2,16 @@ import styled, { css } from "styled-components";
 import Divider from "../Divider";
 import Button from "../Button";
 
-export const StyledTitle = styled.h2`
+export const FirstTitle = styled.h2`
   ${({ theme }) => css`
     color: ${theme.fontPrimary};
+  `}
+`;
+
+export const SecondTitle = styled.h2`
+  ${({ theme }) => css`
+    color: ${theme.fontPrimary};
+    margin: 40px 0;
   `}
 `;
 

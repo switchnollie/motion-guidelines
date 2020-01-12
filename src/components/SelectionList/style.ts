@@ -24,7 +24,11 @@ export const Item = styled.li<{ selected?: boolean }>`
     background-color: ${selected ? theme.accentColor : "unset"};
     color: ${selected ? theme.fontInverse : theme.fontPrimary};
     margin-left: -${theme.columnPadding};
-    padding: 16px 0 16px ${theme.columnPadding};
+    padding: 0 11px 0 ${theme.columnPadding};
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     cursor: pointer;
   `}
 `;

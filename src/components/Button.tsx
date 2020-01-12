@@ -30,6 +30,7 @@ interface Props {
   children: ReactElement | string;
   style?: CSSProperties;
   className?: string;
+  onClick?: (event: React.MouseEvent) => any;
 }
 
 export default function Button({ children, style, ...props }: Props) {
