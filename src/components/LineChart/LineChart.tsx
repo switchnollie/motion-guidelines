@@ -1,37 +1,7 @@
-import React, { useEffect, useRef, useState, RefObject } from "react";
-import styled, { css, keyframes } from "styled-components";
-import { Principle } from "../types";
-
-const DrawLine = keyframes`to { stroke-dashoffset: 0;}`;
-
-const SquashNStretchLines = styled.path<{
-  animationDuration: number;
-  lineLength: number | undefined;
-}>`
-  ${({ animationDuration, lineLength, theme }) => css`
-    stroke: ${theme.accentColor};
-    stroke-dasharray: ${lineLength};
-    stroke-dashoffset: ${lineLength};
-    .animate {
-      animation: ${DrawLine} ${animationDuration}ms linear forwards;
-    }
-  `}
-`;
-
-interface Props {
-  mode: Principle | null;
-  lastAnimate: number;
-}
-
-interface LineLengthState {
-  [k: string]: number;
-}
-
-interface PathDomElements {
-  [k: string]: {
-    [k: string]: RefObject<SVGPathElement>;
-  };
-}
+import React, { useEffect, useRef, useState } from "react";
+import { Principle } from "../../types";
+import { Props, LineLengthState, PathDomElements } from "./types";
+import { SquashNStretchLines } from "./style";
 
 const getDuration = (mode: Principle) => {
   switch (mode) {
