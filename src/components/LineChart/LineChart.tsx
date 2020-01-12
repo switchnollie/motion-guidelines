@@ -30,22 +30,35 @@ export default function LineChart({ mode, lastAnimate, ...props }: Props) {
       }
       return acc;
     };
-
     const newPathLengths: LineLengthState = Object.keys(
       pathDomElements[mode]
     ).reduce(reducer, initialAcc);
     return newPathLengths;
   };
 
+  const clearAnimateClasses = () => {
+    Object.keys(pathDomElements).forEach(modeKey => {
+      const modeObj = pathDomElements[modeKey];
+      Object.keys(modeObj).forEach(pathKey => {
+        const domEl = modeObj[pathKey].current;
+        const classList = domEl?.classList;
+        if (classList && classList.contains("animate")) {
+          classList.remove("animate");
+        }
+      });
+    });
+  };
+
   const startAnimation = (domEl: SVGPathElement) => {
     const classList = domEl.classList;
     if (classList && classList.contains("animate")) {
       classList.remove("animate");
+      void domEl.clientHeight;
     }
     classList?.add("animate");
   };
   useEffect(() => {
-    if (mode && lastAnimate) {
+    if (mode !== null && lastAnimate) {
       switch (mode as Principle) {
         case Principle.SquashNStretch:
           const domEl = pathDomElements[Principle.SquashNStretch].lines;
@@ -57,7 +70,8 @@ export default function LineChart({ mode, lastAnimate, ...props }: Props) {
     }
   }, [lastAnimate, mode]);
   useEffect(() => {
-    if (mode) {
+    clearAnimateClasses();
+    if (mode !== null && pathDomElements[mode]) {
       const newPathLengths = calculatePathLengths(mode);
       setPathLengths(newPathLengths);
     }
@@ -94,7 +108,7 @@ export default function LineChart({ mode, lastAnimate, ...props }: Props) {
         {mode === Principle.SquashNStretch && (
           <SquashNStretchLines
             ref={pathDomElements[Principle.SquashNStretch].lines}
-            lineLength={pathLengths[Principle.SquashNStretch]}
+            lineLength={pathLengths.lines}
             animationDuration={getDuration(Principle.SquashNStretch)}
             strokeWidth="2"
             d="M3 21.5C17.125 32.5 30.769 38 43.931 38c20.225 0 26.967-28 41.413-28 7.223 0 13.483 15.5 20.225 15.5 6.741 0 10.112-4.5 14.928-4.5 1.284 0 2.728.167 4.334.5M3 69.75C17.125 75.25 30.769 78 43.931 78c20.225 0 26.967-14 41.413-14 7.223 0 13.483 7.75 20.225 7.75 6.741 0 10.112-2.25 14.928-2.25 1.284 0 2.728.083 4.334.25"

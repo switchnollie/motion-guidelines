@@ -32,7 +32,6 @@ export default function PrincipleSelection() {
     setSelectedMode: setValue
   } = usePrincipleSelection();
   const handleChange = (event: React.FormEvent, newValue: any) => {
-    console.log("change: new Value is", newValue);
     setValue(newValue);
   };
   return (

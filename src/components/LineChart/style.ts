@@ -10,7 +10,7 @@ export const SquashNStretchLines = styled.path<{
     stroke: ${theme.accentColor};
     stroke-dasharray: ${lineLength};
     stroke-dashoffset: ${lineLength};
-    .animate {
+    &.animate {
       animation: ${DrawLine} ${animationDuration}ms linear forwards;
     }
   `}
