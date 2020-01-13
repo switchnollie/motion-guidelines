@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Column from "../Column";
 import PrincipleSelection from "../PrincipleSelection";
 import LineChart from "../LineChart";
@@ -14,10 +14,14 @@ import {
 } from "./style";
 import usePrincipleSelection from "../../hooks/usePrincipleSelection";
 
-export default function CenterColumn() {
-  const [lastClick, setLastClick] = useState(0);
+interface Props {
+  lastAnimate: number;
+  setLastAnimate: (x: number) => any;
+}
+
+export default function CenterColumn({ lastAnimate, setLastAnimate }: Props) {
   const { selectedMode } = usePrincipleSelection();
-  const handleButtonClick = () => setLastClick(Date.now());
+  const handleButtonClick = () => setLastAnimate(Date.now());
   return (
     <Column>
       <TopContainer>
@@ -29,7 +33,7 @@ export default function CenterColumn() {
           <PrincipleSelection />
         </SelectionListColumn>
         <VisualizerColumn>
-          <LineChart lastAnimate={lastClick} mode={selectedMode} />
+          <LineChart lastAnimate={lastAnimate} mode={selectedMode} />
         </VisualizerColumn>
       </SelectionGrid>
       <SecondTitle>Modellierung in Software</SecondTitle>
