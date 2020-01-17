@@ -40,9 +40,10 @@ export default function LeftColumn({ lastAnimate }: Props) {
       {transitions.map(({ item, key, props }, i) => {
         if (i === 0) {
           return (
-            <animated.h1 key={key} style={{ ...props }}>
-              Motion Guidelines
-            </animated.h1>
+            <animated.div style={{ ...props }}>
+              <h1 key={key}>Motion Guidelines</h1>
+              <Divider horizontal inverse />
+            </animated.div>
           );
         }
         return (
@@ -51,7 +52,6 @@ export default function LeftColumn({ lastAnimate }: Props) {
           </AnimatedTitle>
         );
       })}
-      <Divider horizontal inverse />
       <HsAalenLogo />
     </AnimatedColumn>
   );

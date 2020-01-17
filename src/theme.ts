@@ -30,6 +30,10 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
   } 
 
+  * {
+    user-select: none;
+  }
+
   h1 {
     font-size: 48px;
     font-weight: 800;

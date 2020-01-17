@@ -11,6 +11,7 @@ export const AnimatedLine = styled.path<{
     stroke: ${theme.accentColor};
     stroke-dasharray: ${lineLength};
     stroke-dashoffset: ${lineLength};
+    stroke-width: 2;
     &.animate {
       animation: ${DrawLine} ${animationDuration}ms linear
         ${animationDelay ? `${animationDelay}ms` : ""} forwards;
