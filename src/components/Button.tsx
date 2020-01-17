@@ -7,7 +7,7 @@ import { useSpring, animated } from "react-spring";
 const Pulse = keyframes`
   0% {
     box-shadow: 0 0 0 0 ${theme.accentColor};
-    opacity: 1;
+    opacity: 0.9;
   } 70% {
     box-shadow: 0 0 5px 18px ${theme.accentColor};
   } 100% {

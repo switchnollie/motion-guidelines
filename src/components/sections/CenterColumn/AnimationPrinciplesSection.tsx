@@ -1,32 +1,29 @@
 import React from "react";
-import Column from "../Column";
-import PrincipleSelection from "../PrincipleSelection";
-import LineChart from "../LineChart";
-import {
-  FirstTitle,
-  StyledDivider,
-  TopContainer,
-  StyledButton,
-  SelectionGrid,
+import PrincipleSelection from "../../PrincipleSelection";
+import LineChart from "../../LineChart";
+import { FirstTitle, TopContainer, StyledButton } from "./style";
+import SelectionGrid, {
   VisualizerColumn,
-  SelectionListColumn,
-  SecondTitle
-} from "./style";
-import usePrincipleSelection from "../../hooks/usePrincipleSelection";
-import { Principle } from "../../types";
+  SelectionListColumn
+} from "../../SelectionGrid";
+import usePrincipleSelection from "../../../hooks/usePrincipleSelection";
+import { Principle } from "../../../types";
 
 interface Props {
   lastAnimate: number;
   setLastAnimate: (x: number) => any;
 }
 
-export default function CenterColumn({ lastAnimate, setLastAnimate }: Props) {
+export default function AnimationPrinciplesSection({
+  lastAnimate,
+  setLastAnimate
+}: Props) {
   const { selectedMode } = usePrincipleSelection();
   const handleButtonClick = () => setLastAnimate(Date.now());
   const isInAnticipationMode = selectedMode === Principle.Anticipation;
-  const svg = require(`!raw-loader!../../images/play-arrow.svg`);
+  const svg = require(`!raw-loader!../../../images/play-arrow.svg`);
   return (
-    <Column>
+    <>
       <TopContainer>
         <FirstTitle>Animationsprinzipien</FirstTitle>
         <StyledButton
@@ -59,8 +56,6 @@ export default function CenterColumn({ lastAnimate, setLastAnimate }: Props) {
           <LineChart lastAnimate={lastAnimate} mode={selectedMode} />
         </VisualizerColumn>
       </SelectionGrid>
-      <SecondTitle>Modellierung in Software</SecondTitle>
-      <StyledDivider vertical />
-    </Column>
+    </>
   );
 }

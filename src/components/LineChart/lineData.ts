@@ -16,7 +16,7 @@ const lineData: LineConfig[] = [
     path:
       "M0,88 C18.4786325,29.3333333 41.4786325,0 69,0 C96.5213675,0 115.021368,0 124.5,0",
     transform: "translate(3.000000, -0.000000)",
-    animationDuration: 500
+    animationDuration: 300
   },
   {
     id: `${Principle.FollowThrough}-1`,
@@ -24,7 +24,7 @@ const lineData: LineConfig[] = [
     path:
       "M25,88 C43.4786325,29.3333333 66.4786325,0 94,0 C121.521368,0 131.521368,0 124,0",
     transform: "translate(3.000000, -0.000000)",
-    animationDuration: 500,
+    animationDuration: 300,
     animationDelay: 100
   },
   {
@@ -32,7 +32,7 @@ const lineData: LineConfig[] = [
     modeId: Principle.FollowThrough,
     path: "M55,88 C73.4786325,29.3333333 96.4786325,0 124,0",
     transform: "translate(3.000000, -0.000000)",
-    animationDuration: 500,
+    animationDuration: 300,
     animationDelay: 200
   }
 ];

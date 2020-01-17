@@ -6,7 +6,7 @@ interface Props {
   value: any;
   onChange?: (e: React.FormEvent, value: any) => void;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   selected?: boolean;
 }
 

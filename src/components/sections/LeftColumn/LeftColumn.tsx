@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { useTransition, animated } from "react-spring";
-import Column from "../Column";
-import Divider from "../Divider";
-import HsAalenLogo from "../HsAalenLogo";
+import Column from "../../Column";
+import Divider from "../../Divider";
+import HsAalenLogo from "../../HsAalenLogo";
 import { StyledTitle } from "./style";
-import { Principle } from "../../types";
-import usePrincipleSelection from "../../hooks/usePrincipleSelection";
+import { Principle } from "../../../types";
+import usePrincipleSelection from "../../../hooks/usePrincipleSelection";
 
 const AnimatedColumn = animated(Column);
-const AnimatedTitle = animated(StyledTitle);
 
 interface Props {
   lastAnimate: number;
@@ -40,16 +39,18 @@ export default function LeftColumn({ lastAnimate }: Props) {
       {transitions.map(({ item, key, props }, i) => {
         if (i === 0) {
           return (
-            <animated.div style={{ ...props }}>
-              <h1 key={key}>Motion Guidelines</h1>
-              <Divider horizontal inverse />
-            </animated.div>
+            <animated.h1 style={{ ...props }} key={key}>
+              Motion Guidelines
+            </animated.h1>
           );
         }
         return (
-          <AnimatedTitle key={key} style={{ ...props }}>
-            Kognitive Grundlagen
-          </AnimatedTitle>
+          <animated.div style={{ ...props }}>
+            <StyledTitle key={key} style={{ ...props }}>
+              Kognitive Grundlagen
+            </StyledTitle>
+            <Divider horizontal inverse />
+          </animated.div>
         );
       })}
       <HsAalenLogo />

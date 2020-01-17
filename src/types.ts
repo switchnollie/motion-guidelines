@@ -4,3 +4,8 @@ export enum Principle {
   FollowThrough,
   Timing
 }
+
+export enum SoftwareImplementation {
+  Keyframes,
+  Spring
+}
