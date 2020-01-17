@@ -26,7 +26,7 @@ export default function CenterColumn({ lastAnimate, setLastAnimate }: Props) {
     <Column>
       <TopContainer>
         <FirstTitle>Animationsprinzipien</FirstTitle>
-        <StyledButton onClick={handleButtonClick}>Click Me!</StyledButton>
+        <StyledButton onClick={handleButtonClick}>Animate</StyledButton>
       </TopContainer>
       <SelectionGrid>
         <SelectionListColumn>

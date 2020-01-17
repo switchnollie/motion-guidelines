@@ -8,7 +8,7 @@ export default function RightColumn() {
     <Column>
       <StyledTitle>Umsetzungen</StyledTitle>
       <SmartphoneFrame>
-        <MockContent>JD's Demos</MockContent>
+        <iframe name="hero" src="http://127.0.0.1:8080/#/" />
       </SmartphoneFrame>
     </Column>
   );

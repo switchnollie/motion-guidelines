@@ -6,7 +6,7 @@ const PhoneContainer = styled.div`
   position: absolute;
   height: 584px;
   width: 315px;
-  right: -29px;
+  right: -25px;
   bottom: -65px;
   padding: 65px 29px 111px 65px;
   box-sizing: border-box;

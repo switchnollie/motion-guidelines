@@ -36,19 +36,10 @@ export default function LeftColumn({ lastAnimate }: Props) {
       setShown(!shown);
     }
   }, [lastAnimate]);
-  const springRef = useRef() as MutableRefObject<undefined> &
-    RefObject<ReactSpringHook>;
-  const styleProps = useSpring({
-    ref: springRef,
-    transform: shown ? "translateX(0%)" : "translateX(-100%)"
-  });
-  const transRef = useRef() as MutableRefObject<undefined> &
-    RefObject<ReactSpringHook>;
   const transitions = useTransition(
     shown ? staggeredItems : [],
     item => item.id,
     {
-      ref: transRef,
       unique: true,
       trail: 200 / staggeredItems.length,
       from: { opacity: 0, transform: "translateX(-1rem)" },
@@ -56,14 +47,8 @@ export default function LeftColumn({ lastAnimate }: Props) {
       leave: { opacity: 0, transform: "translateX(-1rem)" }
     }
   );
-  useChain(shown ? [springRef, transRef] : [transRef, springRef], [
-    0,
-    shown ? 0.3 : 0.1
-  ]);
-
-  console.log(transitions);
   return (
-    <AnimatedColumn style={styleProps} highlightBackground>
+    <AnimatedColumn highlightBackground>
       {transitions.map(({ item, key, props }, i) => {
         if (i === 0) {
           return (

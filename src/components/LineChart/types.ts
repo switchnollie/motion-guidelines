@@ -11,7 +11,14 @@ export interface LineLengthState {
 }
 
 export interface PathDomElements {
-  [k: string]: {
-    [k: string]: RefObject<SVGPathElement>;
-  };
+  [k: string]: RefObject<SVGPathElement>;
+}
+
+export interface LineConfig {
+  id: string;
+  modeId: Principle;
+  path: string;
+  animationDuration: number;
+  animationDelay?: number;
+  transform?: string;
 }

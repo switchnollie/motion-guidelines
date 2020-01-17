@@ -1,52 +1,46 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, createRef } from "react";
 import { Principle } from "../../types";
 import { Props, LineLengthState, PathDomElements } from "./types";
-import { SquashNStretchLines } from "./style";
-
-const getDuration = (mode: Principle) => {
-  switch (mode) {
-    case Principle.SquashNStretch:
-      return 600;
-    default:
-      return 400;
-  }
-};
+import { AnimatedLine } from "./style";
+import lineData from "./lineData";
 
 export default function LineChart({ mode, lastAnimate, ...props }: Props) {
-  const pathDomElements: PathDomElements = {
-    [Principle.SquashNStretch]: {
-      lines: useRef<SVGPathElement>(null)
-    }
-  };
+  const domElObj = lineData.reduce((acc: PathDomElements, { id }) => {
+    acc[id] = createRef();
+    return acc;
+  }, {});
+  const pathDomElements = useRef<PathDomElements>(domElObj);
+
   const [pathLengths, setPathLengths] = useState<LineLengthState>({});
 
-  const calculatePathLengths = (mode: Principle) => {
+  const calculatePathLengths = () => {
     const initialAcc: LineLengthState = {};
-    const reducer = (acc: LineLengthState, pathElName: string) => {
+    const reducer = (acc: LineLengthState, pathElId: string) => {
       const currentPathEl: SVGPathElement | null =
-        pathDomElements[mode][pathElName]?.current;
+        pathDomElements?.current[pathElId]?.current;
       if (currentPathEl) {
-        acc[pathElName] = currentPathEl.getTotalLength();
+        acc[pathElId] = currentPathEl.getTotalLength();
       }
       return acc;
     };
     const newPathLengths: LineLengthState = Object.keys(
-      pathDomElements[mode]
+      pathDomElements.current || {}
     ).reduce(reducer, initialAcc);
     return newPathLengths;
   };
 
   const clearAnimateClasses = () => {
-    Object.keys(pathDomElements).forEach(modeKey => {
-      const modeObj = pathDomElements[modeKey];
-      Object.keys(modeObj).forEach(pathKey => {
-        const domEl = modeObj[pathKey].current;
+    Object.keys(pathDomElements.current || {})
+      .filter(
+        key => (lineData as any)[key] && (lineData as any)[key].modeId === mode
+      )
+      .forEach(pathKey => {
+        const domEl = pathDomElements?.current[pathKey]?.current;
         const classList = domEl?.classList;
         if (classList && classList.contains("animate")) {
           classList.remove("animate");
         }
       });
-    });
   };
 
   const startAnimation = (domEl: SVGPathElement) => {
@@ -59,20 +53,19 @@ export default function LineChart({ mode, lastAnimate, ...props }: Props) {
   };
   useEffect(() => {
     if (mode !== null && lastAnimate) {
-      switch (mode as Principle) {
-        case Principle.SquashNStretch:
-          const domEl = pathDomElements[Principle.SquashNStretch].lines;
-          domEl.current && startAnimation(domEl.current);
-          break;
-        default:
-          console.log("running animation for ", mode);
-      }
+      lineData
+        .filter(({ modeId }) => mode === modeId)
+        .forEach(({ id }) => {
+          const domEl = pathDomElements?.current[id];
+          domEl?.current && startAnimation(domEl.current);
+        });
     }
   }, [lastAnimate, mode]);
   useEffect(() => {
     clearAnimateClasses();
-    if (mode !== null && pathDomElements[mode]) {
-      const newPathLengths = calculatePathLengths(mode);
+    if (mode !== null && pathDomElements?.current) {
+      const newPathLengths = calculatePathLengths();
+      console.log({ newPathLengths });
       setPathLengths(newPathLengths);
     }
   }, [mode]);
@@ -105,16 +98,18 @@ export default function LineChart({ mode, lastAnimate, ...props }: Props) {
             d="M0.482 3.137L122.813 3.137"
           ></path>
         </g>
-        {mode === Principle.SquashNStretch && (
-          <SquashNStretchLines
-            ref={pathDomElements[Principle.SquashNStretch].lines}
-            lineLength={pathLengths.lines}
-            animationDuration={getDuration(Principle.SquashNStretch)}
-            strokeWidth="2"
-            d="M3 21.5C17.125 32.5 30.769 38 43.931 38c20.225 0 26.967-28 41.413-28 7.223 0 13.483 15.5 20.225 15.5 6.741 0 10.112-4.5 14.928-4.5 1.284 0 2.728.167 4.334.5M3 69.75C17.125 75.25 30.769 78 43.931 78c20.225 0 26.967-14 41.413-14 7.223 0 13.483 7.75 20.225 7.75 6.741 0 10.112-2.25 14.928-2.25 1.284 0 2.728.083 4.334.25"
-            transform="translate(-677 -190) translate(677 190)"
-          ></SquashNStretchLines>
-        )}
+        {lineData
+          .filter(({ modeId }) => modeId === mode)
+          .map(({ path, animationDuration, animationDelay, id }) => (
+            <AnimatedLine
+              key={id}
+              lineLength={pathLengths[id]}
+              animationDuration={animationDuration}
+              ref={pathDomElements.current[id]}
+              d={path}
+              animationDelay={animationDelay}
+            />
+          ))}
       </g>
     </svg>
   );
