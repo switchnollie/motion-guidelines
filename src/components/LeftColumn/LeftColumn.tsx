@@ -1,17 +1,5 @@
-import React, {
-  useState,
-  useEffect,
-  useRef,
-  MutableRefObject,
-  RefObject
-} from "react";
-import {
-  useSpring,
-  useTransition,
-  useChain,
-  animated,
-  ReactSpringHook
-} from "react-spring";
+import React, { useState, useEffect } from "react";
+import { useTransition, animated } from "react-spring";
 import Column from "../Column";
 import Divider from "../Divider";
 import HsAalenLogo from "../HsAalenLogo";

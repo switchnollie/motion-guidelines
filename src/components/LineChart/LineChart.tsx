@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState, createRef } from "react";
-import { Principle } from "../../types";
 import { Props, LineLengthState, PathDomElements } from "./types";
 import { AnimatedLine } from "./style";
 import lineData from "./lineData";
