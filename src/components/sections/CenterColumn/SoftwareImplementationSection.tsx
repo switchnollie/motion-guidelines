@@ -1,26 +1,14 @@
 import React from "react";
 import { StyledDivider, SecondTitle, BoxWrapper, Box } from "./style";
-import SelectionList, { SelectionItem } from "../../SelectionList";
+import SelectionList from "../../SelectionList";
 import useImplementationSelection from "../../../hooks/useSoftwareSelection";
-import SelectionGrid, {
-  SelectionListColumn,
-  VisualizerColumn
-} from "../../SelectionGrid";
+import KeyframesSection from "./KeyframesSection";
+import SpringSection from "./SpringSection";
 
 interface Props {
   lastAnimate: number;
   setLastAnimate: (x: number) => any;
 }
-const selectionListItems = [
-  {
-    id: "keyframes",
-    title: "Keyframes"
-  },
-  {
-    id: "spring",
-    title: "Physikalische Modelle"
-  }
-];
 
 export default function SoftwareImplementationSection(props: Props) {
   const {
@@ -39,16 +27,10 @@ export default function SoftwareImplementationSection(props: Props) {
         <Box keyRight />
         <Box main />
       </BoxWrapper>
-      <SelectionGrid>
-        <SelectionListColumn>
-          <SelectionList value={value} onChange={handleChange}>
-            {selectionListItems.map(({ id, title }) => (
-              <SelectionItem key={id} value={id} title={title} />
-            ))}
-          </SelectionList>
-        </SelectionListColumn>
-        <VisualizerColumn></VisualizerColumn>
-      </SelectionGrid>
+      <SelectionList value={value} onChange={handleChange}>
+        <KeyframesSection />
+        <SpringSection />
+      </SelectionList>
     </>
   );
 }
