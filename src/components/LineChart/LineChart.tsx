@@ -64,7 +64,6 @@ export default function LineChart({ mode, lastAnimate, ...props }: Props) {
     clearAnimateClasses();
     if (mode !== null && pathDomElements?.current) {
       const newPathLengths = calculatePathLengths();
-      console.log({ newPathLengths });
       setPathLengths(newPathLengths);
     }
   }, [mode]);

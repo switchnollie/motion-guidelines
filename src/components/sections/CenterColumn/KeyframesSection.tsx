@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { SelectionItem as ImplementationSelectionItem } from "../../SelectionList";
-import SelectionGrid, {
-  SelectionListColumn,
-  VisualizerColumn
-} from "../../SelectionGrid";
+import TwoColGrid, { LeftColumn, RightColumn } from "../../TwoColGrid";
 import SelectionTabs, { SelectionItem } from "../../SelectionTabs";
 import { Easing } from "../../../types";
 
@@ -19,8 +16,8 @@ export default function KeyframesSection({ selected, value, onChange }: Props) {
     setSelectedEasing(newValue);
   };
   return (
-    <SelectionGrid>
-      <SelectionListColumn>
+    <TwoColGrid>
+      <LeftColumn>
         <ImplementationSelectionItem
           onChange={onChange}
           selected={selected}
@@ -34,8 +31,8 @@ export default function KeyframesSection({ selected, value, onChange }: Props) {
             {Easing.EaseInOut}
           </SelectionItem>
         </SelectionTabs>
-      </SelectionListColumn>
-      <VisualizerColumn></VisualizerColumn>
-    </SelectionGrid>
+      </LeftColumn>
+      <RightColumn></RightColumn>
+    </TwoColGrid>
   );
 }

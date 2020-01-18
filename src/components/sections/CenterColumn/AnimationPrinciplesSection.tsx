@@ -1,10 +1,7 @@
 import React from "react";
 import PrincipleSelection from "../../PrincipleSelection";
 import LineChart from "../../LineChart";
-import SelectionGrid, {
-  VisualizerColumn,
-  SelectionListColumn
-} from "../../SelectionGrid";
+import TwoColGrid, { RightColumn, LeftColumn } from "../../TwoColGrid";
 import usePrincipleSelection from "../../../hooks/usePrincipleSelection";
 
 interface Props {
@@ -16,14 +13,14 @@ export default function AnimationPrinciplesSection({ lastAnimate }: Props) {
   const { selectedMode } = usePrincipleSelection();
   return (
     <>
-      <SelectionGrid>
-        <SelectionListColumn>
+      <TwoColGrid>
+        <LeftColumn>
           <PrincipleSelection />
-        </SelectionListColumn>
-        <VisualizerColumn>
+        </LeftColumn>
+        <RightColumn>
           <LineChart lastAnimate={lastAnimate} mode={selectedMode} />
-        </VisualizerColumn>
-      </SelectionGrid>
+        </RightColumn>
+      </TwoColGrid>
     </>
   );
 }

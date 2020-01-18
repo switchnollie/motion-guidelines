@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { transparentize } from "polished";
 import Divider from "../../Divider";
 import Button from "../../Button";
+import RangeInput from "../../RangeInput";
 
 export const FirstTitle = styled.h2`
   ${({ theme }) => css`
@@ -12,7 +13,7 @@ export const FirstTitle = styled.h2`
 export const SecondTitle = styled.h2`
   ${({ theme }) => css`
     color: ${theme.fontPrimary};
-    margin: 40px 0;
+    margin: 40px 0 20px;
   `}
 `;
 
@@ -29,7 +30,7 @@ export const StyledDivider = styled(Divider)`
 export const TopContainer = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   h2 {
     flex: 1;
   }
@@ -90,4 +91,20 @@ export const BoxWrapper = styled.div`
   height: 60px;
   position: relative;
   margin-bottom: 17px;
+`;
+
+export const SliderWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  &:first-of-type {
+    margin-bottom: 14px;
+  }
+`;
+
+export const StyledRangeInput = styled(RangeInput)`
+  width: 128px;
+`;
+
+export const SlidersContainer = styled.div`
+  margin-top: 20px;
 `;

@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const TabsContainer = styled.ul`
   box-sizing: border-box;
   margin: 0;
-  padding: 23px 0;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   li {

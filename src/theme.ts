@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { transparentize } from "polished";
+import { transparentize, desaturate } from "polished";
 
 const fontInverse = "#FFF";
 const accentColor = "#647FFF";
@@ -12,6 +12,7 @@ const theme = {
   fontInverse,
   fontInverseSecondary: transparentize(0.68, fontInverse),
   pageBackground: "#FFF",
+  listHoverBackground: desaturate(0.5, transparentize(0.85, accentColor)),
   columnPadding: "40px"
 };
 

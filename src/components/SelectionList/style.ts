@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const ListContainer = styled.ul`
   box-sizing: border-box;
   margin: 0;
-  padding: 0 25px 0 0;
+  padding: 0;
   li {
     list-style-type: none;
   }
@@ -30,5 +30,13 @@ export const Item = styled.li<{ selected?: boolean }>`
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
+    transition: background-color 0.2s ease-out;
+
+    ${!selected &&
+      css`
+        &:hover {
+          background-color: ${theme.listHoverBackground};
+        }
+      `}
   `}
 `;
