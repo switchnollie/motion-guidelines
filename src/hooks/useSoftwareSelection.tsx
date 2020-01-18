@@ -11,8 +11,8 @@ import { SoftwareImplementation, Easing } from "../types";
 interface ImplementationConfigState {
   selectedMode: SoftwareImplementation | null;
   setSelectedMode: Dispatch<SetStateAction<SoftwareImplementation | null>>;
-  selectedEasing: Easing | null;
-  setSelectedEasing: Dispatch<SetStateAction<Easing | null>>;
+  selectedEasing: Easing;
+  setSelectedEasing: Dispatch<SetStateAction<Easing>>;
   stiffness: number;
   setStiffness: Dispatch<SetStateAction<number>>;
   damping: number;
@@ -22,7 +22,7 @@ interface ImplementationConfigState {
 const defaultImplementationConfigState: ImplementationConfigState = {
   selectedMode: null,
   setSelectedMode: (): void => {},
-  selectedEasing: null,
+  selectedEasing: Easing.EaseOut,
   setSelectedEasing: (): void => {},
   stiffness: 30,
   setStiffness: (): void => {},
@@ -43,9 +43,7 @@ export const ImplementationConfigProvider = ({
     selectedMode,
     setSelectedMode
   ] = useState<SoftwareImplementation | null>(null);
-  const [selectedEasing, setSelectedEasing] = useState<Easing | null>(
-    Easing.EaseOut
-  );
+  const [selectedEasing, setSelectedEasing] = useState<Easing>(Easing.EaseOut);
   const [stiffness, setStiffness] = useState(30);
   const [damping, setDamping] = useState(30);
 
