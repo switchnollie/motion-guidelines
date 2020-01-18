@@ -26,16 +26,17 @@ const mainBoxStyles = css`
   left: 0;
   cursor: pointer;
   &.ease-in {
-    transition: left 0.4s ease-in;
+    transition: left 0.4s ease-in, transform 0.4s ease-out;
   }
   &.ease-out {
-    transition: left 0.4s ease-out;
+    transition: left 0.4s ease-out, transform 0.4s ease-out;
   }
   &.ease-in-out {
-    transition: left 0.4s ease-in-out;
+    transition: left 0.4s ease-in-out, transform 0.4s ease-out;
   }
   &.toggle {
     left: calc(100% - 60px);
+    transform: rotate(180deg);
   }
 `;
 
