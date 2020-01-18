@@ -11,12 +11,9 @@ interface Props {
 }
 
 export default function SoftwareImplementationSection(props: Props) {
-  const {
-    selectedMode: value,
-    setSelectedMode: setValue
-  } = useImplementationSelection();
+  const { selectedMode, setSelectedMode } = useImplementationSelection();
   const handleChange = (event: React.FormEvent, newValue: any) => {
-    setValue(newValue);
+    setSelectedMode(newValue);
   };
   return (
     <>
@@ -27,7 +24,7 @@ export default function SoftwareImplementationSection(props: Props) {
         <Box keyRight />
         <Box main />
       </BoxWrapper>
-      <SelectionList value={value} onChange={handleChange}>
+      <SelectionList value={selectedMode} onChange={handleChange}>
         <KeyframesSection />
         <SpringSection />
       </SelectionList>

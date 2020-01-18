@@ -1,5 +1,6 @@
 import React from "react";
 import { SelectionItem } from "../../SelectionList";
+import useImplementationSelection from "../../../hooks/useSoftwareSelection";
 import { SliderWrapper, StyledRangeInput, SlidersContainer } from "./style";
 import theme from "../../../theme";
 
@@ -10,6 +11,12 @@ interface Props {
 }
 
 export default function SpringSection({ selected, value, onChange }: Props) {
+  const {
+    stiffness,
+    setStiffness,
+    damping,
+    setDamping
+  } = useImplementationSelection();
   return (
     <>
       <SelectionItem
@@ -23,9 +30,11 @@ export default function SpringSection({ selected, value, onChange }: Props) {
         <SliderWrapper>
           <label>Stiffness</label>
           <StyledRangeInput
-            onChange={() => {}}
+            onChange={e => {
+              setStiffness(parseInt(e.target.value, 10));
+            }}
             name="stiffness"
-            value={25}
+            value={stiffness}
             max={100}
             min={0}
             baseColor={theme.fontSecondary}
@@ -35,9 +44,11 @@ export default function SpringSection({ selected, value, onChange }: Props) {
         <SliderWrapper>
           <label>Damping</label>
           <StyledRangeInput
-            onChange={() => {}}
+            onChange={e => {
+              setDamping(parseInt(e.target.value, 10));
+            }}
             name="damping"
-            value={25}
+            value={damping}
             max={100}
             min={0}
             baseColor={theme.fontSecondary}

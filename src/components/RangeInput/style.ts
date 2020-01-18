@@ -49,6 +49,7 @@ export const RangeInputStyled = styled.input<RangeInputProps>`
     --sx: calc(
       0.5 * ${thumbDiameter} + var(--ratio) * (100% - ${thumbDiameter})
     );
+    outline: none;
     margin: 0;
     padding: 0;
     width: 100%;

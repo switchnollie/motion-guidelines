@@ -6,23 +6,35 @@ import React, {
   SetStateAction,
   ReactNode
 } from "react";
-import { SoftwareImplementation } from "../types";
+import { SoftwareImplementation, Easing } from "../types";
 
-interface ImplementationSelectionState {
+interface ImplementationConfigState {
   selectedMode: SoftwareImplementation | null;
   setSelectedMode: Dispatch<SetStateAction<SoftwareImplementation | null>>;
+  selectedEasing: Easing | null;
+  setSelectedEasing: Dispatch<SetStateAction<Easing | null>>;
+  stiffness: number;
+  setStiffness: Dispatch<SetStateAction<number>>;
+  damping: number;
+  setDamping: Dispatch<SetStateAction<number>>;
 }
 
-const defaultImplementationSelectionState: ImplementationSelectionState = {
+const defaultImplementationConfigState: ImplementationConfigState = {
   selectedMode: null,
-  setSelectedMode: (): void => {}
+  setSelectedMode: (): void => {},
+  selectedEasing: null,
+  setSelectedEasing: (): void => {},
+  stiffness: 30,
+  setStiffness: (): void => {},
+  damping: 30,
+  setDamping: (): void => {}
 };
 
-export const ImplementationSelectionContext = createContext<
-  ImplementationSelectionState
->(defaultImplementationSelectionState);
+export const ImplementationConfigContext = createContext<
+  ImplementationConfigState
+>(defaultImplementationConfigState);
 
-export const ImplementationSelectionProvider = ({
+export const ImplementationConfigProvider = ({
   children
 }: {
   children: ReactNode;
@@ -31,16 +43,30 @@ export const ImplementationSelectionProvider = ({
     selectedMode,
     setSelectedMode
   ] = useState<SoftwareImplementation | null>(null);
+  const [selectedEasing, setSelectedEasing] = useState<Easing | null>(
+    Easing.EaseOut
+  );
+  const [stiffness, setStiffness] = useState(30);
+  const [damping, setDamping] = useState(30);
 
   return (
-    <ImplementationSelectionContext.Provider
-      value={{ selectedMode, setSelectedMode }}
+    <ImplementationConfigContext.Provider
+      value={{
+        selectedMode,
+        setSelectedMode,
+        selectedEasing,
+        setSelectedEasing,
+        stiffness,
+        setStiffness,
+        damping,
+        setDamping
+      }}
     >
       {children}
-    </ImplementationSelectionContext.Provider>
+    </ImplementationConfigContext.Provider>
   );
 };
 
-export default function useImplementationSelection() {
-  return useContext(ImplementationSelectionContext);
+export default function useImplementationConfig() {
+  return useContext(ImplementationConfigContext);
 }

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import useImplementationSelection from "../../../hooks/useSoftwareSelection";
 import { SelectionItem as ImplementationSelectionItem } from "../../SelectionList";
 import TwoColGrid, { LeftColumn, RightColumn } from "../../TwoColGrid";
 import SelectionTabs, { SelectionItem } from "../../SelectionTabs";
@@ -11,7 +12,7 @@ interface Props {
 }
 
 export default function KeyframesSection({ selected, value, onChange }: Props) {
-  const [selectedEasing, setSelectedEasing] = useState(Easing.EaseOut);
+  const { selectedEasing, setSelectedEasing } = useImplementationSelection();
   const handleChange = (event: React.FormEvent, newValue: any) => {
     setSelectedEasing(newValue);
   };

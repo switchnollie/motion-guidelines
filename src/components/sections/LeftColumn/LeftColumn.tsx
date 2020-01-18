@@ -45,10 +45,8 @@ export default function LeftColumn({ lastAnimate }: Props) {
           );
         }
         return (
-          <animated.div style={{ ...props }}>
-            <StyledTitle key={key} style={{ ...props }}>
-              Kognitive Grundlagen
-            </StyledTitle>
+          <animated.div style={{ ...props }} key={key}>
+            <StyledTitle style={{ ...props }}>Kognitive Grundlagen</StyledTitle>
             <Divider horizontal inverse />
           </animated.div>
         );
