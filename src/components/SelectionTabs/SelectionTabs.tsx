@@ -1,5 +1,5 @@
 import React, { FormEvent } from "react";
-import { ListContainer } from "./style";
+import { TabsContainer } from "./style";
 import SelectionDecorator from "../SelectionDecorator";
 
 interface Props {
@@ -8,10 +8,10 @@ interface Props {
   children: JSX.Element | JSX.Element[];
 }
 
-export default function SelectionList({ children, ...props }: Props) {
+export default function SelectionTabs({ children, ...props }: Props) {
   return (
-    <ListContainer>
+    <TabsContainer>
       <SelectionDecorator {...props}>{children}</SelectionDecorator>
-    </ListContainer>
+    </TabsContainer>
   );
 }
