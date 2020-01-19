@@ -12,10 +12,10 @@ interface Props {
 
 export default function SpringSection({ selected, value, onChange }: Props) {
   const {
-    stiffness,
-    setStiffness,
-    damping,
-    setDamping
+    tension,
+    setTension,
+    friction,
+    setFriction
   } = useImplementationSelection();
   return (
     <>
@@ -28,27 +28,27 @@ export default function SpringSection({ selected, value, onChange }: Props) {
       />
       <SlidersContainer>
         <SliderWrapper>
-          <label>Stiffness</label>
+          <label>Tension</label>
           <StyledRangeInput
             onChange={e => {
-              setStiffness(parseInt(e.target.value, 10));
+              setTension(parseInt(e.target.value, 10));
             }}
-            name="stiffness"
-            value={stiffness}
-            max={100}
+            name="tension"
+            value={tension}
+            max={500}
             min={0}
             baseColor={theme.fontSecondary}
             accentColor={theme.accentColor}
           />
         </SliderWrapper>
         <SliderWrapper>
-          <label>Damping</label>
+          <label>Friction</label>
           <StyledRangeInput
             onChange={e => {
-              setDamping(parseInt(e.target.value, 10));
+              setFriction(parseInt(e.target.value, 10));
             }}
-            name="damping"
-            value={damping}
+            name="friction"
+            value={friction}
             max={100}
             min={0}
             baseColor={theme.fontSecondary}

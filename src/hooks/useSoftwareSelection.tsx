@@ -11,23 +11,23 @@ import { SoftwareImplementation, Easing } from "../types";
 interface ImplementationConfigState {
   selectedMode: SoftwareImplementation | null;
   setSelectedMode: Dispatch<SetStateAction<SoftwareImplementation | null>>;
-  selectedEasing: Easing;
-  setSelectedEasing: Dispatch<SetStateAction<Easing>>;
-  stiffness: number;
-  setStiffness: Dispatch<SetStateAction<number>>;
-  damping: number;
-  setDamping: Dispatch<SetStateAction<number>>;
+  selectedEasing: Easing | null;
+  setSelectedEasing: Dispatch<SetStateAction<Easing | null>>;
+  tension: number;
+  setTension: Dispatch<SetStateAction<number>>;
+  friction: number;
+  setFriction: Dispatch<SetStateAction<number>>;
 }
 
 const defaultImplementationConfigState: ImplementationConfigState = {
   selectedMode: null,
   setSelectedMode: (): void => {},
-  selectedEasing: Easing.EaseOut,
+  selectedEasing: null,
   setSelectedEasing: (): void => {},
-  stiffness: 30,
-  setStiffness: (): void => {},
-  damping: 30,
-  setDamping: (): void => {}
+  tension: 310,
+  setTension: (): void => {},
+  friction: 40,
+  setFriction: (): void => {}
 };
 
 export const ImplementationConfigContext = createContext<
@@ -43,9 +43,9 @@ export const ImplementationConfigProvider = ({
     selectedMode,
     setSelectedMode
   ] = useState<SoftwareImplementation | null>(null);
-  const [selectedEasing, setSelectedEasing] = useState<Easing>(Easing.EaseOut);
-  const [stiffness, setStiffness] = useState(30);
-  const [damping, setDamping] = useState(30);
+  const [selectedEasing, setSelectedEasing] = useState<Easing | null>(null);
+  const [tension, setTension] = useState(310);
+  const [friction, setFriction] = useState(40);
 
   return (
     <ImplementationConfigContext.Provider
@@ -54,10 +54,10 @@ export const ImplementationConfigProvider = ({
         setSelectedMode,
         selectedEasing,
         setSelectedEasing,
-        stiffness,
-        setStiffness,
-        damping,
-        setDamping
+        tension,
+        setTension,
+        friction,
+        setFriction
       }}
     >
       {children}
