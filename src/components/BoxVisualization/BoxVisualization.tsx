@@ -24,7 +24,7 @@ export default function BoxVisualization({ lastAnimate }: Props) {
     setToggle(!toggle);
   }, [lastAnimate]);
 
-  const boxDomEl = useKeyframeBox(toggle, setToggle);
+  const boxDomEl = useKeyframeBox(toggle);
   return (
     <BoxWrapper>
       <Box keyLeft />

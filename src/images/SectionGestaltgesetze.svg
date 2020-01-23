@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="342px" height="128px" viewBox="0 0 342 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SectionGestaltgesetze-Copy">
+            <path d="M6.292,17.192 C8.032,17.192 8.92,16.892 9.46,16.712 L9.46,12.38 L5.92,12.38 L5.92,13.82 L7.6,13.82 L7.6,15.644 C7.396,15.704 7.084,15.812 6.184,15.812 C5.152,15.812 4.576,15.548 4.144,15.068 C3.508,14.384 3.424,13.328 3.424,12.74 C3.424,11.408 3.844,9.44 5.956,9.44 C6.364,9.44 7.048,9.536 7.408,10.112 C7.624,10.448 7.636,10.76 7.648,10.988 L9.58,10.988 C9.568,10.52 9.532,9.836 8.956,9.176 C8.272,8.396 7.12,8.084 6.004,8.084 C3.376,8.084 1.456,9.728 1.456,12.8 C1.456,13.712 1.636,15.092 2.608,16.04 C3.292,16.712 4.312,17.192 6.292,17.192 Z M13.670587,17.228 C14.558587,17.228 15.350587,16.988 15.794587,16.52 C16.286587,16.004 16.346587,15.488 16.370587,15.2 L14.750587,15.2 C14.582587,15.872 14.138587,16.04 13.694587,16.04 C12.458587,16.04 12.458587,14.816 12.458587,14.42 L16.526587,14.42 C16.550587,13.916 16.574587,13.028 16.166587,12.2 C15.614587,11.072 14.582587,10.736 13.718587,10.736 C13.058587,10.736 12.482587,10.928 12.014587,11.24 C10.994587,11.948 10.754587,13.124 10.754587,14.108 C10.754587,15.08 10.982587,15.896 11.534587,16.472 C12.170587,17.132 13.154587,17.228 13.670587,17.228 Z M14.714587,13.304 L12.518587,13.304 C12.554587,12.596 12.878587,11.948 13.658587,11.948 C14.690587,11.948 14.714587,13.028 14.714587,13.304 Z M19.705174,17.18 C21.589174,17.18 22.489174,16.136 22.489174,15.092 C22.489174,14.264 21.973174,13.7 20.869174,13.4 L19.777174,13.1 C19.249174,12.956 18.949174,12.872 18.949174,12.464 C18.949174,12.092 19.309174,11.864 19.789174,11.864 C20.065174,11.864 20.605174,11.912 20.653174,12.584 L22.273174,12.584 C22.225174,11.372 21.217174,10.796 19.969174,10.796 C18.397174,10.796 17.317174,11.516 17.317174,12.692 C17.317174,13.928 18.361174,14.228 18.853174,14.372 L19.957174,14.672 C20.653174,14.864 20.797174,15.08 20.797174,15.356 C20.797174,15.716 20.497174,16.076 19.861174,16.076 C19.117174,16.076 18.877174,15.632 18.853174,15.248 L17.185174,15.248 C17.197174,15.536 17.233174,16.016 17.629174,16.436 C18.181174,17.012 18.925174,17.18 19.705174,17.18 Z M25.715761,17.108 C26.003761,17.108 26.519761,17.072 27.095761,16.916 L27.095761,15.752 C26.879761,15.776 26.759761,15.788 26.495761,15.788 C25.703761,15.788 25.703761,15.44 25.691761,14.888 L25.691761,12.152 L27.131761,12.152 L27.131761,10.976 L25.691761,10.976 L25.691761,9.14 L23.927761,9.788 L23.927761,10.976 L22.763761,10.976 L22.763761,12.152 L23.927761,12.152 L23.927761,15.476 C23.927761,15.98 23.927761,17.108 25.715761,17.108 Z M31.690348,16.172 C31.690348,16.352 31.690348,16.628 31.750348,17 L33.358348,17 C33.250348,16.496 33.214348,15.98 33.214348,15.464 L33.202348,13.028 C33.202348,12.752 33.190348,12.032 32.782348,11.54 C32.182348,10.844 31.126348,10.76 30.622348,10.76 C30.046348,10.76 29.338348,10.856 28.786348,11.252 C28.150348,11.708 28.114348,12.356 28.102348,12.68 L29.842348,12.68 C29.842348,12.536 29.842348,12.344 29.974348,12.14 C30.130348,11.912 30.394348,11.804 30.646348,11.804 C30.814348,11.804 31.282348,11.864 31.438348,12.308 C31.510348,12.524 31.522348,12.716 31.522348,13.112 C30.934348,13.112 29.866348,13.112 29.122348,13.448 C28.006348,13.964 27.838348,14.852 27.838348,15.332 C27.838348,15.812 28.006348,16.304 28.366348,16.664 C28.606348,16.892 29.002348,17.144 29.878348,17.144 C30.214348,17.144 31.018348,17.144 31.690348,16.172 Z M30.430348,15.992 C29.842348,15.992 29.566348,15.536 29.566348,15.128 C29.566348,14.408 30.382348,14.048 31.522348,14.144 C31.522348,14.792 31.498348,15.26 31.186348,15.644 C31.018348,15.836 30.754348,15.992 30.430348,15.992 Z M36.476935,17 L36.476935,8.324 L34.700935,8.324 L34.700935,17 L36.476935,17 Z M40.135522,17.108 C40.423522,17.108 40.939522,17.072 41.515522,16.916 L41.515522,15.752 C41.299522,15.776 41.179522,15.788 40.915522,15.788 C40.123522,15.788 40.123522,15.44 40.111522,14.888 L40.111522,12.152 L41.551522,12.152 L41.551522,10.976 L40.111522,10.976 L40.111522,9.14 L38.347522,9.788 L38.347522,10.976 L37.183522,10.976 L37.183522,12.152 L38.347522,12.152 L38.347522,15.476 C38.347522,15.98 38.347522,17.108 40.135522,17.108 Z M48.198109,16.94 L48.198109,12.464 C48.198109,11.852 48.234109,11.444 48.282109,10.964 L46.614109,10.964 L46.554109,11.768 C46.374109,11.504 45.966109,10.904 44.862109,10.904 C43.122109,10.904 42.270109,12.368 42.270109,13.904 C42.270109,15.368 43.086109,16.88 44.826109,16.88 C45.258109,16.88 45.894109,16.796 46.458109,16.052 C46.446109,16.976 46.446109,17.192 46.374109,17.492 C46.254109,18.032 45.798109,18.284 45.270109,18.284 C44.322109,18.284 44.238109,17.624 44.214109,17.444 L42.510109,17.444 C42.6142519,19.2144286 44.1912723,19.3780816 45.0784791,19.3875129 L45.174109,19.388 C46.338109,19.388 48.198109,19.172 48.198109,16.94 Z M45.234109,15.668 C44.046109,15.668 44.046109,14.204 44.046109,13.904 C44.046109,12.608 44.598109,12.092 45.270109,12.092 C46.350109,12.092 46.482109,13.256 46.482109,13.94 C46.482109,14.204 46.482109,15.668 45.234109,15.668 Z M52.180696,17.228 C53.068696,17.228 53.860696,16.988 54.304696,16.52 C54.796696,16.004 54.856696,15.488 54.880696,15.2 L53.260696,15.2 C53.092696,15.872 52.648696,16.04 52.204696,16.04 C50.968696,16.04 50.968696,14.816 50.968696,14.42 L55.036696,14.42 C55.060696,13.916 55.084696,13.028 54.676696,12.2 C54.124696,11.072 53.092696,10.736 52.228696,10.736 C51.568696,10.736 50.992696,10.928 50.524696,11.24 C49.504696,11.948 49.264696,13.124 49.264696,14.108 C49.264696,15.08 49.492696,15.896 50.044696,16.472 C50.680696,17.132 51.664696,17.228 52.180696,17.228 Z M53.224696,13.304 L51.028696,13.304 C51.064696,12.596 51.388696,11.948 52.168696,11.948 C53.200696,11.948 53.224696,13.028 53.224696,13.304 Z M58.215283,17.18 C60.099283,17.18 60.999283,16.136 60.999283,15.092 C60.999283,14.264 60.483283,13.7 59.379283,13.4 L58.287283,13.1 C57.759283,12.956 57.459283,12.872 57.459283,12.464 C57.459283,12.092 57.819283,11.864 58.299283,11.864 C58.575283,11.864 59.115283,11.912 59.163283,12.584 L60.783283,12.584 C60.735283,11.372 59.727283,10.796 58.479283,10.796 C56.907283,10.796 55.827283,11.516 55.827283,12.692 C55.827283,13.928 56.871283,14.228 57.363283,14.372 L58.467283,14.672 C59.163283,14.864 59.307283,15.08 59.307283,15.356 C59.307283,15.716 59.007283,16.076 58.371283,16.076 C57.627283,16.076 57.387283,15.632 57.363283,15.248 L55.695283,15.248 C55.707283,15.536 55.743283,16.016 56.139283,16.436 C56.691283,17.012 57.435283,17.18 58.215283,17.18 Z M64.68187,17.228 C65.56987,17.228 66.36187,16.988 66.80587,16.52 C67.29787,16.004 67.35787,15.488 67.38187,15.2 L65.76187,15.2 C65.59387,15.872 65.14987,16.04 64.70587,16.04 C63.46987,16.04 63.46987,14.816 63.46987,14.42 L67.53787,14.42 C67.56187,13.916 67.58587,13.028 67.17787,12.2 C66.62587,11.072 65.59387,10.736 64.72987,10.736 C64.06987,10.736 63.49387,10.928 63.02587,11.24 C62.00587,11.948 61.76587,13.124 61.76587,14.108 C61.76587,15.08 61.99387,15.896 62.54587,16.472 C63.18187,17.132 64.16587,17.228 64.68187,17.228 Z M65.72587,13.304 L63.52987,13.304 C63.56587,12.596 63.88987,11.948 64.66987,11.948 C65.70187,11.948 65.72587,13.028 65.72587,13.304 Z M70.812457,17.108 C71.100457,17.108 71.616457,17.072 72.192457,16.916 L72.192457,15.752 C71.976457,15.776 71.856457,15.788 71.592457,15.788 C70.800457,15.788 70.800457,15.44 70.788457,14.888 L70.788457,12.152 L72.228457,12.152 L72.228457,10.976 L70.788457,10.976 L70.788457,9.14 L69.024457,9.788 L69.024457,10.976 L67.860457,10.976 L67.860457,12.152 L69.024457,12.152 L69.024457,15.476 C69.024457,15.98 69.024457,17.108 70.812457,17.108 Z M77.987044,17 L77.987044,15.776 L74.795044,15.776 L77.867044,12.464 L77.867044,10.94 L72.899044,10.94 L72.899044,12.128 L75.887044,12.128 L72.815044,15.44 L72.815044,17 L77.987044,17 Z M81.525631,17.228 C82.413631,17.228 83.205631,16.988 83.649631,16.52 C84.141631,16.004 84.201631,15.488 84.225631,15.2 L82.605631,15.2 C82.437631,15.872 81.993631,16.04 81.549631,16.04 C80.313631,16.04 80.313631,14.816 80.313631,14.42 L84.381631,14.42 C84.405631,13.916 84.429631,13.028 84.021631,12.2 C83.469631,11.072 82.437631,10.736 81.573631,10.736 C80.913631,10.736 80.337631,10.928 79.869631,11.24 C78.849631,11.948 78.609631,13.124 78.609631,14.108 C78.609631,15.08 78.837631,15.896 79.389631,16.472 C80.025631,17.132 81.009631,17.228 81.525631,17.228 Z M82.569631,13.304 L80.373631,13.304 C80.409631,12.596 80.733631,11.948 81.513631,11.948 C82.545631,11.948 82.569631,13.028 82.569631,13.304 Z" id="Gestaltgesetze" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <g id="Gestaltgesetze" transform="translate(0.000000, 37.000000)">
+                <g id="Group-6" transform="translate(5.000000, 5.000000)">
+                    <g id="1" fill="#FFFFFF" stroke="#FFFFFF">
+                        <g id="Dot" transform="translate(31.500000, 27.000000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.500000, 15.750000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.500000, 7.875000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.500000, 0.000000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(23.625000, 27.000000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(23.625000, 15.500000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(23.625000, 7.875000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(23.625000, 0.000000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(15.750000, 27.000000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(15.750000, 15.500000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(15.750000, 7.875000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(15.750000, 0.000000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(7.625000, 27.000000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(7.625000, 15.500000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(7.625000, 7.875000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(7.625000, 0.000000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 27.000000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 15.500000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 7.875000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                    </g>
+                    <g id="2" transform="translate(0.000000, 46.000000)">
+                        <g id="Dot" transform="translate(31.500000, 27.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.500000, 15.750000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.500000, 7.875000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.500000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(23.625000, 27.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(23.625000, 15.500000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(23.625000, 7.875000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(23.625000, 0.000000)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(15.750000, 27.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(15.750000, 15.500000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(15.750000, 7.875000)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(15.750000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(7.625000, 27.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(7.625000, 15.500000)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(7.625000, 7.875000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(7.625000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(0.000000, 27.000000)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 15.500000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 7.875000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                    </g>
+                    <g id="3" transform="translate(51.000000, 1.500000)" fill="#FFFFFF" stroke="#FFFFFF">
+                        <g id="Dot" transform="translate(0.000000, 23.610147)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 15.799208)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 7.988269)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 23.610147)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 15.799208)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 7.988269)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 0.000000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 23.610147)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 15.799208)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 7.988269)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 7.988269)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 7.988269)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 0.000000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 0.000000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 0.000000)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 23.610147)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 23.610147)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 15.799208)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 15.799208)">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                    </g>
+                    <g id="4" transform="translate(51.000000, 47.500000)">
+                        <g id="Dot" transform="translate(0.000000, 23.610147)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 15.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 23.610147)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 15.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(10.375000, 0.000000)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 23.610147)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 15.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(20.750000, 7.988269)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 23.610147)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(41.500000, 23.610147)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(31.125000, 15.799208)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 15.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-8" transform="translate(238.000000, 4.000000)">
+                    <g id="1" transform="translate(0.000000, 1.000000)" stroke="#FFFFFF">
+                        <g id="Dot" transform="translate(33.500000, 27.000000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(33.500000, 15.750000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(33.500000, 7.875000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(33.500000, 0.000000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(25.625000, 27.000000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(25.625000, 15.500000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(25.625000, 7.875000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(25.625000, 0.000000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(17.750000, 27.000000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(17.750000, 15.500000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(17.750000, 7.875000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(17.750000, 0.000000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(9.625000, 27.000000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(9.625000, 15.500000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(9.625000, 7.875000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(9.625000, 0.000000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(2.000000, 27.000000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(2.000000, 15.500000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(2.000000, 7.875000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(2.000000, 0.000000)" fill="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <rect id="Rectangle-Copy-4" stroke-opacity="0.503086757" x="0.793250623" y="14.5" width="38.9825645" height="19.2364945"></rect>
+                    </g>
+                    <g id="2" transform="translate(0.000000, 47.000000)">
+                        <g id="Dot" transform="translate(33.500000, 27.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(33.500000, 15.750000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(33.500000, 7.875000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(33.500000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(25.625000, 27.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(25.625000, 15.500000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(25.625000, 7.875000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(25.625000, 0.000000)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(17.750000, 27.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(17.750000, 15.500000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(17.750000, 7.875000)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(17.750000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(9.625000, 27.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(9.625000, 15.500000)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(9.625000, 7.875000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(9.625000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(2.000000, 27.000000)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(2.000000, 15.500000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(2.000000, 7.875000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(2.000000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <rect id="Rectangle" stroke="#B1BFFF" x="0.793250623" y="14.1648326" width="38.9825645" height="19.2364945"></rect>
+                    </g>
+                    <g id="3" transform="translate(53.000000, 0.500000)" fill="#FFFFFF">
+                        <g id="Dot" transform="translate(0.000000, 25.610147)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 17.799208)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 9.988269)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 25.610147)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 17.799208)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 9.988269)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 2.000000)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 2.000000)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 25.610147)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 17.799208)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 9.988269)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 9.988269)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 9.988269)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 2.000000)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 2.000000)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 2.000000)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 25.610147)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 25.610147)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 17.799208)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 17.799208)" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <rect id="Rectangle" fill-opacity="0.504561844" x="8" y="0.5" width="20" height="32"></rect>
+                    </g>
+                    <g id="4" transform="translate(53.000000, 46.500000)">
+                        <g id="Dot" transform="translate(0.000000, 25.610147)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 17.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 9.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 25.610147)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 17.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 9.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(10.375000, 2.000000)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 2.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 25.610147)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 17.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(20.750000, 9.988269)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 9.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 9.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 2.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 2.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 2.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 25.610147)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(41.500000, 25.610147)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(31.125000, 17.799208)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 17.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <rect id="Rectangle" fill-opacity="0.504561844" fill="#FFFFFF" x="8" y="0.5" width="20" height="32"></rect>
+                    </g>
+                </g>
+                <g id="Group-7" transform="translate(117.000000, 8.000000)">
+                    <g id="5">
+                        <g id="Dot" transform="translate(0.000000, 23.610147)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 15.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accentGrey" transform="translate(10.375000, 23.610147)" fill="#B1BFFF" stroke="#B1BFFF">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accentGrey" transform="translate(10.375000, 15.799208)" fill="#B1BFFF" stroke="#B1BFFF">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accentGrey" transform="translate(20.750000, 23.610147)" fill="#B1BFFF" stroke="#B1BFFF">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 15.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accentGrey" transform="translate(31.125000, 23.610147)" fill="#B1BFFF" stroke="#B1BFFF">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 23.610147)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accentGrey" transform="translate(31.125000, 15.799208)" fill="#B1BFFF" stroke="#B1BFFF">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 15.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                    </g>
+                    <g id="8" transform="translate(60.703814, 0.000000)">
+                        <g id="Dot" transform="translate(0.000000, 23.610147)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 15.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(10.375000, 23.610147)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(10.375000, 15.799208)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(20.750000, 23.610147)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 15.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(31.125000, 23.610147)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 23.610147)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accent" transform="translate(31.125000, 15.799208)" fill="#00FFA1" stroke="#00FFA1">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 15.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                    </g>
+                    <g id="7" transform="translate(60.703814, 46.000000)">
+                        <g id="Dot" transform="translate(0.000000, 23.610147)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 15.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accentRect" transform="translate(10.375000, 23.610147)" fill="#B1BFFF" stroke="#B1BFFF">
+                            <rect id="Rectangle" transform="translate(2.500000, 2.500000) rotate(-45.000000) translate(-2.500000, -2.500000) " x="1.23223305" y="1.23223305" width="2.53553391" height="2.53553391"></rect>
+                        </g>
+                        <g id="dot/accentRect" transform="translate(10.375000, 15.799208)" fill="#B1BFFF" stroke="#B1BFFF">
+                            <rect id="Rectangle" transform="translate(2.500000, 2.500000) rotate(-45.000000) translate(-2.500000, -2.500000) " x="1.23223305" y="1.23223305" width="2.53553391" height="2.53553391"></rect>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accentRect" transform="translate(20.750000, 23.610147)" fill="#B1BFFF" stroke="#B1BFFF">
+                            <rect id="Rectangle" transform="translate(2.500000, 2.500000) rotate(-45.000000) translate(-2.500000, -2.500000) " x="1.23223305" y="1.23223305" width="2.53553391" height="2.53553391"></rect>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 15.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accentRect" transform="translate(31.125000, 23.610147)" fill="#B1BFFF" stroke="#B1BFFF">
+                            <rect id="Rectangle" transform="translate(2.500000, 2.500000) rotate(-45.000000) translate(-2.500000, -2.500000) " x="1.23223305" y="1.23223305" width="2.53553391" height="2.53553391"></rect>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 23.610147)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accentRect" transform="translate(31.125000, 15.799208)" fill="#B1BFFF" stroke="#B1BFFF">
+                            <rect id="Rectangle" transform="translate(2.500000, 2.500000) rotate(-45.000000) translate(-2.500000, -2.500000) " x="1.23223305" y="1.23223305" width="2.53553391" height="2.53553391"></rect>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 15.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                    </g>
+                    <g id="6" transform="translate(0.000000, 46.000000)">
+                        <g id="Dot" transform="translate(0.000000, 23.610147)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 15.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(0.000000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accentBig" transform="translate(10.375000, 23.610147)" fill="#B1BFFF" stroke="#B1BFFF">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2.5"></circle>
+                        </g>
+                        <g id="dot/accentBig" transform="translate(10.375000, 15.799208)" fill="#B1BFFF" stroke="#B1BFFF">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2.5"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(10.375000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accentBig" transform="translate(20.750000, 23.610147)" fill="#B1BFFF" stroke="#B1BFFF">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2.5"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 15.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 7.988269)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(31.125000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(20.750000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accentBig" transform="translate(31.125000, 23.610147)" fill="#B1BFFF" stroke="#B1BFFF">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2.5"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 23.610147)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                        <g id="dot/accentBig" transform="translate(31.125000, 15.799208)" fill="#B1BFFF" stroke="#B1BFFF">
+                            <circle id="Oval-Copy-2" cx="2.5" cy="2.5" r="2.5"></circle>
+                        </g>
+                        <g id="Dot" transform="translate(41.500000, 15.799208)" fill="#FFFFFF" stroke="#FFFFFF">
+                            <circle id="Oval-Copy-20" cx="2.5" cy="2.5" r="2"></circle>
+                        </g>
+                    </g>
+                </g>
+                <rect id="Rectangle" stroke-opacity="0.145951705" stroke="#FFFFFF" x="0" y="0" width="108" height="91"></rect>
+                <rect id="Rectangle-Copy-5" stroke-opacity="0.145951705" stroke="#FFFFFF" x="234" y="0" width="108" height="91"></rect>
+                <rect id="Rectangle-Copy-6" stroke-opacity="0.145951705" stroke="#FFFFFF" x="108" y="0" width="126" height="91"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

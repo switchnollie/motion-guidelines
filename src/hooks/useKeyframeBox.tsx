@@ -1,12 +1,9 @@
-import { useRef, useEffect, Dispatch, SetStateAction } from "react";
+import { useRef, useEffect } from "react";
 import { SoftwareImplementation } from "../types";
 import useImplementationSelection from "./useSoftwareSelection";
 import { Easing } from "../types";
 
-const useKeyframeBox = (
-  toggle: boolean,
-  setToggle: Dispatch<React.SetStateAction<boolean>>
-) => {
+const useKeyframeBox = (toggle: boolean) => {
   const boxDomEl = useRef<HTMLDivElement>(null);
   const { selectedEasing, selectedMode } = useImplementationSelection();
 
@@ -35,7 +32,7 @@ const useKeyframeBox = (
     }
   };
 
-  const changeEasing = () => {
+  const updateEasing = () => {
     clearEasingClasses();
     const classList = boxDomEl?.current?.classList;
     if (selectedEasing) {
@@ -51,6 +48,8 @@ const useKeyframeBox = (
   useEffect(() => {
     if (selectedMode === SoftwareImplementation.Spring) {
       clearAnimateClass();
+    } else {
+      updateEasing();
     }
   }, [selectedMode]);
 
@@ -66,7 +65,7 @@ const useKeyframeBox = (
     }
   }, [toggle]);
 
-  useEffect(changeEasing, [selectedEasing]);
+  useEffect(updateEasing, [selectedEasing]);
 
   return boxDomEl;
 };
