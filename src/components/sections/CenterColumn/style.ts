@@ -54,3 +54,12 @@ export const StyledRangeInput = styled(RangeInput)`
 export const SlidersContainer = styled.div`
   margin-top: 20px;
 `;
+
+export const TopRightContainer = styled.span`
+  display: inline-flex;
+  align-items: center;
+
+  & > *:not(:last-child) {
+    margin-right: 1em;
+  }
+`;
