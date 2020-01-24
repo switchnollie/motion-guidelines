@@ -1,5 +1,12 @@
-import React, { Dispatch, SetStateAction } from "react";
-import { useTransition, animated } from "react-spring";
+import React, { Dispatch, SetStateAction, useRef } from "react";
+import {
+  useTransition,
+  useSpring,
+  animated,
+  ReactSpringHook,
+  useChain,
+  config
+} from "react-spring";
 import styled from "styled-components";
 
 export const AnimatedTooltipMenu = styled(animated.div)`
@@ -57,24 +64,39 @@ interface Props {
 }
 
 export default function TooltipMenu({ isOpen, setIsOpen, items }: Props) {
-  const transitions = useTransition(isOpen, null, {
-    from: {
-      position: "absolute",
-      opacity: 0,
-      transform: "translate(-50%, -5px)"
-    },
-    enter: { opacity: 1, transform: "translate(-50%, 0px)" },
-    leave: { opacity: 0, transform: "translate(-50%, -5px)" },
-    config: { tension: 400, friction: 35 }
+  const containerSpringRef = useRef<ReactSpringHook>(null);
+  const springProps = useSpring({
+    ref: containerSpringRef,
+    config: config.stiff,
+    from: { opacity: 0, transform: "translate(-50%, -5px)" },
+    to: {
+      opacity: isOpen ? 1 : 0,
+      transform: isOpen ? "translate(-50%, 0px)" : "translate(-50%, -5px)"
+    }
   });
-  return transitions.map(
-    ({ item, key, props }) =>
-      item && (
-        <AnimatedTooltipMenu style={props}>
-          {items.map(i => (
-            <span key={i}>{i}</span>
-          ))}
-        </AnimatedTooltipMenu>
-      )
+  const itemsTransitionsRef = useRef<ReactSpringHook>(null);
+  const itemsTransitions = useTransition(isOpen ? items : [], item => item, {
+    ref: itemsTransitionsRef,
+    unique: true,
+    config: config.stiff,
+    trail: 200 / items.length,
+    from: { opacity: 0, transform: "scale(0)" },
+    enter: { opacity: 1, transform: "scale(1)" },
+    leave: { opacity: 0, transform: "scale(0)" }
+  });
+  useChain(
+    isOpen
+      ? [containerSpringRef, itemsTransitionsRef]
+      : [itemsTransitionsRef, containerSpringRef],
+    [0, isOpen ? 0.1 : 0.3]
+  );
+  return (
+    <AnimatedTooltipMenu style={springProps}>
+      {itemsTransitions.map(({ item: i, key: k, props: p }) => (
+        <animated.span key={k} style={{ ...p }}>
+          {i}
+        </animated.span>
+      ))}
+    </AnimatedTooltipMenu>
   );
 }

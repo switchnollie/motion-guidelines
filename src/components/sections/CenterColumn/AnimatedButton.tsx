@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React, { useState } from "react";
 import { StyledButton } from "./style";
 import TooltipMenu from "../../TooltipMenu";
@@ -48,11 +47,13 @@ export default function AnimatedButton({ setLastAnimate }: Props) {
           "Animate"
         )}
       </StyledButton>
-      <TooltipMenu
-        isOpen={isInTimingMode && isTooltipShown}
-        setIsOpen={setIsTooltipShown}
-        items={items}
-      />
+      {isInTimingMode && (
+        <TooltipMenu
+          isOpen={isTooltipShown}
+          setIsOpen={setIsTooltipShown}
+          items={items}
+        />
+      )}
     </div>
   );
 }
