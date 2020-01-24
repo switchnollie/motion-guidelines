@@ -1,5 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 import { transparentize, desaturate } from "polished";
+import Cursor from "./images/cursor.png";
+import CursorHr from "./images/cursor@2x.png";
+import CursorActive from "./images/cursor-active@2x.png";
+import CursorActiveHr from "./images/cursor-active@2x.png";
 
 const fontInverse = "#FFF";
 const accentColor = "#647FFF";
@@ -26,7 +30,19 @@ export const GlobalStyle = createGlobalStyle`
     color: ${theme.fontPrimary};
     overflow: hidden;
     font-size: 12px;
+    cursor: url("${Cursor}") 21 21, auto !important;
+    cursor: -webkit-image-set(
+          url("${Cursor}") 1x,
+          url("${CursorHr}") 2x
+        )
+        21 21,
+      auto !important;
+    &:active {
+      cursor: url("${CursorActive}") 21 21, auto !important;
+      cursor: -webkit-image-set(url("${CursorActive}") 1x, url("${CursorActiveHr}") 2x) 21 21, auto !important;
+    }
   }
+  
   .App {
     display: flex;
   } 

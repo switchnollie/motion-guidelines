@@ -16,7 +16,7 @@ export const Item = styled.li<{ selected?: boolean }>`
     color: ${selected ? theme.accentColor : theme.fontPrimary};
     display: inline-block;
     padding: 0 7px;
-    cursor: pointer;
+    //cursor: pointer;
 
     &:first-of-type {
       padding-left: 0 !important;

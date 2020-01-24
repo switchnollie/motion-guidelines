@@ -29,7 +29,7 @@ export const Item = styled.li<{ selected?: boolean }>`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    cursor: pointer;
+    //cursor: pointer;
     transition: background-color 0.2s ease-out;
 
     ${!selected &&

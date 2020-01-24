@@ -1,3 +1,5 @@
+// as seen on https://css-tricks.com/emoji-toggles/
+
 import React from "react";
 import styled, { css } from "styled-components";
 
@@ -8,8 +10,6 @@ interface Props {
   rightLabel: string;
 }
 
-const Emoji = styled.div<Props>``;
-
 const Wrapper = styled.div<Props>`
   ${({ leftEmoji, rightEmoji, leftLabel, rightLabel }) => css`
     position: relative;
@@ -19,7 +19,7 @@ const Wrapper = styled.div<Props>`
       background: #eee;
       height: 22px;
       border-radius: 11px;
-      cursor: pointer;
+      //cursor: pointer;
     }
     .toggle {
       opacity: 0;
@@ -29,7 +29,7 @@ const Wrapper = styled.div<Props>`
       width: 100%;
       background: transparent;
       position: absolute;
-      cursor: pointer;
+      //cursor: pointer;
       z-index: 100;
       ~ .emoji:before {
         content: ${`"\\${leftEmoji}"`};

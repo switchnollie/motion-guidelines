@@ -50,7 +50,7 @@ const StyledButton = styled(animated.button)<{
     justify-content: center;
     align-items: center;
     background-color: ${accentColor};
-    cursor: pointer;
+    //cursor: pointer;
     outline: none;
     text-transform: uppercase;
     font-size: 14px;
