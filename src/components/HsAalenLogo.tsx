@@ -3,9 +3,9 @@ import styled, { css } from "styled-components";
 
 const LogoContainer = styled.div`
   ${({ theme }) => css`
-    bottom: ${theme.columnPadding};
-    width: 194px;
+    width: 144px;
     position: absolute;
+    bottom: 20px;
 
     svg {
       width: 100%;
