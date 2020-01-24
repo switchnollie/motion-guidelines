@@ -16,7 +16,7 @@ export default function AnimatedButton({ setLastAnimate }: Props) {
   const isInAnticipationMode = selectedMode === Principle.Anticipation;
   const isInTimingMode = selectedMode === Principle.Timing;
   const svg = require(`!raw-loader!../../../images/play-arrow.svg`);
-  const items = ["🦄", "🦍", "🐙", "🐠"];
+  const tooltipMenuItems = ["🦄", "🦍", "🐙", "🐠"];
   return (
     <div style={{ position: "relative" }}>
       <StyledButton
@@ -51,7 +51,7 @@ export default function AnimatedButton({ setLastAnimate }: Props) {
         <TooltipMenu
           isOpen={isTooltipShown}
           setIsOpen={setIsTooltipShown}
-          items={items}
+          items={tooltipMenuItems}
         />
       )}
     </div>

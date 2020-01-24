@@ -2,7 +2,7 @@ import React from "react";
 import { StyledDivider, SecondTitle } from "./style";
 import SelectionList from "../../SelectionList";
 import useImplementationSelection from "../../../hooks/useSoftwareSelection";
-import KeyframesSection from "./KeyframesSection";
+import EasingDurationsSection from "./EasingDurationsSection";
 import SpringSection from "./SpringSection";
 import BoxVisualization from "../../BoxVisualization";
 
@@ -28,7 +28,7 @@ export default function SoftwareImplementationSection({
         setLastAnimate={setLastAnimate}
       />
       <SelectionList value={selectedMode} onChange={handleChange}>
-        <KeyframesSection />
+        <EasingDurationsSection />
         <SpringSection />
       </SelectionList>
     </>

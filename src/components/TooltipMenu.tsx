@@ -21,6 +21,7 @@ export const AnimatedTooltipMenu = styled(animated.div)`
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 3px;
   padding: 3px;
+  transform-origin: 0% 50%;
 
   span {
     display: inline-flex;
@@ -65,13 +66,20 @@ interface Props {
 
 export default function TooltipMenu({ isOpen, setIsOpen, items }: Props) {
   const containerSpringRef = useRef<ReactSpringHook>(null);
-  const springProps = useSpring({
+  // @ts-ignore
+  const { transf, opacity } = useSpring({
     ref: containerSpringRef,
-    config: config.stiff,
-    from: { opacity: 0, transform: "translate(-50%, -5px)" },
+    config: {
+      tension: 400,
+      friction: 20
+    },
+    from: {
+      opacity: 0,
+      transf: [-25, 0.5]
+    },
     to: {
       opacity: isOpen ? 1 : 0,
-      transform: isOpen ? "translate(-50%, 0px)" : "translate(-50%, -5px)"
+      transf: isOpen ? [0, 1] : [-25, 0.5]
     }
   });
   const itemsTransitionsRef = useRef<ReactSpringHook>(null);
@@ -91,7 +99,15 @@ export default function TooltipMenu({ isOpen, setIsOpen, items }: Props) {
     [0, isOpen ? 0.1 : 0.3]
   );
   return (
-    <AnimatedTooltipMenu style={springProps}>
+    <AnimatedTooltipMenu
+      style={{
+        opacity,
+        transform: transf.interpolate(
+          (y: number, scale: number) =>
+            `scale(${scale}) translate(-50%, ${y}px)`
+        )
+      }}
+    >
       {itemsTransitions.map(({ item: i, key: k, props: p }) => (
         <animated.span key={k} style={{ ...p }}>
           {i}

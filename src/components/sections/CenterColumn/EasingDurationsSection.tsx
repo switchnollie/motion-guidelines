@@ -11,7 +11,11 @@ interface Props {
   onChange?: (e: React.FormEvent, value: any) => void;
 }
 
-export default function KeyframesSection({ selected, value, onChange }: Props) {
+export default function EasingDurationsSection({
+  selected,
+  value,
+  onChange
+}: Props) {
   const { selectedEasing, setSelectedEasing } = useImplementationSelection();
   const handleChange = (event: React.FormEvent, newValue: any) => {
     setSelectedEasing(newValue);
@@ -23,7 +27,7 @@ export default function KeyframesSection({ selected, value, onChange }: Props) {
           onChange={onChange}
           selected={selected}
           value={value}
-          title="Keyframes"
+          title="Easing und Dauer"
         />
         <SelectionTabs value={selectedEasing} onChange={handleChange}>
           <SelectionItem value={Easing.EaseIn}>{Easing.EaseIn}</SelectionItem>

@@ -30,9 +30,9 @@ export default function LeftColumn({ lastAnimate }: Props) {
   const transitions = useTransition(shown ? staggeredItems : [], item => item, {
     unique: true,
     trail: 200 / staggeredItems.length,
-    from: { opacity: 0, transform: "translateX(-1rem)" },
-    enter: { opacity: 1, transform: "translateX(0rem)" },
-    leave: { opacity: 0, transform: "translateX(-1rem)" }
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 }
   });
   return (
     <AnimatedColumn highlightBackground>
