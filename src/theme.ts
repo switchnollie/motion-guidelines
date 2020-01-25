@@ -71,6 +71,12 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+
+  h6 {
+    font-size: 12px;
+    color: ${theme.accentColor};
+    margin: 10px 0;
+  }
 `;
 
 export default theme;
