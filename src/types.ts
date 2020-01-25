@@ -16,7 +16,7 @@ export enum SoftwareImplementation {
 }
 
 export enum Easing {
-  EaseIn = "ease in",
-  EaseOut = "ease out",
-  EaseInOut = "ease in-out"
+  EaseIn = "ease-in",
+  EaseOut = "ease-out",
+  EaseInOut = "ease-in-out"
 }

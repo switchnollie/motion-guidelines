@@ -29,10 +29,7 @@ export default function SoftwareImplementationSection({
     <>
       <SecondTitle>Modellierung in Software</SecondTitle>
       <StyledDivider vertical />
-      <BoxVisualization
-        lastAnimate={lastAnimate}
-        setLastAnimate={setLastAnimate}
-      />
+      <BoxVisualization />
       <SelectionList
         value={selectedMode}
         onChange={handleChange}

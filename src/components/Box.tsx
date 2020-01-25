@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { transparentize } from "polished";
+import { Easing } from "../types";
 
 const getTransparency = (
   keyLeft?: boolean,
@@ -22,30 +23,43 @@ const keyLeftStyles = css`
 const keyRightStyles = css`
   right: 0;
 `;
-const mainBoxStyles = css`
+const getMainBoxStyles = (
+  duration: number,
+  easing: string,
+  withTransition: boolean,
+  toggle?: boolean
+) => css`
   left: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   /*cursor: pointer;*/
-  &.ease-in {
-    transition: left 0.4s ease-in, transform 0.4s ease-out;
-  }
-  &.ease-out {
-    transition: left 0.4s ease-out, transform 0.4s ease-out;
-  }
-  &.ease-in-out {
-    transition: left 0.4s ease-in-out, transform 0.4s ease-out;
-  }
-  &.toggle {
-    left: calc(100% - 60px);
-    transform: rotate(180deg);
-  }
+  ${withTransition && `transition: left ${duration}ms ${easing};`}
+  ${toggle && `left: calc(100% - 60px);`}
 `;
 
-export const Box = styled.div<{
+type BoxProps = {
   keyLeft?: boolean;
   keyRight?: boolean;
   main?: boolean;
-}>`
-  ${({ theme, keyLeft, keyRight, main }) => css`
+  withTransition?: boolean;
+  toggle?: boolean;
+  duration?: number;
+  easing?: Easing | null;
+};
+const defaultProps = {
+  duration: 400,
+  easing: Easing.EaseOut
+};
+export const Box = styled.div<BoxProps>`
+  ${({
+    theme,
+    keyLeft,
+    keyRight,
+    main,
+    duration,
+    easing,
+    withTransition,
+    toggle
+  }) => css`
     border-radius: 7px;
     width: 60px;
     height: 60px;
@@ -56,6 +70,8 @@ export const Box = styled.div<{
     position: absolute;
     ${keyLeft && keyLeftStyles}
     ${keyRight && keyRightStyles}
-    ${main && mainBoxStyles}
+    ${main && getMainBoxStyles(duration!, easing!, !!withTransition, toggle)}
   `}
 `;
+
+Box.defaultProps = defaultProps;

@@ -1,36 +1,43 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useSpring, animated, SpringConfig } from "react-spring";
 import { Box } from "../Box";
 import { BoxWrapper } from "./style";
-import useKeyframeBox from "../../hooks/useKeyframeBox";
 import useImplementationSelection from "../../hooks/useSoftwareSelection";
 import { SoftwareImplementation } from "../../types";
 
-interface Props {
-  lastAnimate: number;
-  setLastAnimate: (x: number) => any;
-}
-
 const AnimatedBox = animated(Box);
 
-export default function BoxVisualization({ lastAnimate }: Props) {
+export default function BoxVisualization() {
   const [toggle, setToggle] = useState<boolean>(false);
-  const { selectedMode, tension, friction } = useImplementationSelection();
+  const {
+    selectedMode,
+    tension,
+    friction,
+    duration,
+    selectedEasing
+  } = useImplementationSelection();
   const springConfig: SpringConfig = { tension, friction };
   const { x } = useSpring(
     toggle ? { config: springConfig, x: 100 } : { x: 0, config: springConfig }
   );
-  useEffect(() => {
+  const handleMainClick = () => {
     setToggle(!toggle);
-  }, [lastAnimate]);
-
-  const boxDomEl = useKeyframeBox(toggle);
+  };
+  const handleLeftClick = () => setToggle(false);
+  const handleRightClick = () => setToggle(true);
   return (
     <BoxWrapper>
-      <Box keyLeft />
-      <Box keyRight />
+      <Box keyLeft onClick={handleLeftClick} />
+      <Box keyRight onClick={handleRightClick} />
       {selectedMode === SoftwareImplementation.Keyframes ? (
-        <Box ref={boxDomEl} main />
+        <Box
+          withTransition
+          duration={duration}
+          easing={selectedEasing}
+          toggle={toggle}
+          main
+          onClick={handleMainClick}
+        />
       ) : (
         <AnimatedBox
           style={{
@@ -38,7 +45,6 @@ export default function BoxVisualization({ lastAnimate }: Props) {
               (x: number) => `calc(${x}% - ${x * 0.01 * 60}px)`
             )
           }}
-          ref={boxDomEl}
           main
         />
       )}
