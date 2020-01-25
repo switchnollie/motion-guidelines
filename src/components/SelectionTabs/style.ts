@@ -11,11 +11,12 @@ export const TabsContainer = styled.ul`
   }
 `;
 
-export const Item = styled.li<{ selected?: boolean }>`
-  ${({ selected, theme }) => css`
+export const Item = styled.li<{ selected?: boolean; disabled?: boolean }>`
+  ${({ selected, theme, disabled }) => css`
     color: ${selected ? theme.accentColor : theme.fontPrimary};
     display: inline-block;
     padding: 0 7px;
+    ${disabled && `opacity: 0.5;`}
     /*cursor: pointer;*/
 
     &:first-of-type {

@@ -11,7 +11,7 @@ export enum NavSection {
 }
 
 export enum SoftwareImplementation {
-  Keyframes,
+  EeaseDuration,
   Spring
 }
 

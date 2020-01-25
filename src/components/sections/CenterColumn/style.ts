@@ -63,3 +63,7 @@ export const TopRightContainer = styled.span`
     margin-right: 1em;
   }
 `;
+
+export const Label = styled.label<{ disabled?: boolean }>`
+  ${({ disabled }) => disabled && "opacity: 0.5;"}
+`;

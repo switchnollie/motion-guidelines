@@ -1,9 +1,14 @@
 import React from "react";
 import { SelectionItem } from "../../SelectionList";
 import useImplementationSelection from "../../../hooks/useSoftwareSelection";
-import { SliderWrapper, StyledRangeInput, SlidersContainer } from "./style";
+import {
+  SliderWrapper,
+  StyledRangeInput,
+  SlidersContainer,
+  Label
+} from "./style";
 import theme from "../../../theme";
-import { NavSection } from "../../../types";
+import { NavSection, SoftwareImplementation } from "../../../types";
 import useNavigationSelection from "../../../hooks/useNavigationSelection";
 
 interface Props {
@@ -22,11 +27,12 @@ export default function SpringSection({
   const {
     tension,
     setTension,
+    selectedMode,
     friction,
     setFriction
   } = useImplementationSelection();
-  const { focusedSection } = useNavigationSelection();
-  const isDisabled = focusedSection !== NavSection.Software;
+  const isDisabledContent =
+    disabled || selectedMode !== SoftwareImplementation.Spring;
   return (
     <>
       <SelectionItem
@@ -39,7 +45,7 @@ export default function SpringSection({
       />
       <SlidersContainer>
         <SliderWrapper>
-          <label>Tension</label>
+          <Label disabled={isDisabledContent}>Tension</Label>
           <StyledRangeInput
             onChange={e => {
               setTension(parseInt(e.target.value, 10));
@@ -48,13 +54,13 @@ export default function SpringSection({
             value={tension}
             max={500}
             min={0}
-            disabled={isDisabled}
+            disabled={isDisabledContent}
             baseColor={theme.fontSecondary}
-            accentColor={isDisabled ? "#bbbfcd" : theme.accentColor}
+            accentColor={isDisabledContent ? "#bbbfcd" : theme.accentColor}
           />
         </SliderWrapper>
         <SliderWrapper>
-          <label>Friction</label>
+          <Label disabled={isDisabledContent}>Friction</Label>
           <StyledRangeInput
             onChange={e => {
               setFriction(parseInt(e.target.value, 10));
@@ -63,9 +69,9 @@ export default function SpringSection({
             value={friction}
             max={100}
             min={0}
-            disabled={isDisabled}
+            disabled={isDisabledContent}
             baseColor={theme.fontSecondary}
-            accentColor={isDisabled ? "#bbbfcd" : theme.accentColor}
+            accentColor={isDisabledContent ? "#bbbfcd" : theme.accentColor}
           />
         </SliderWrapper>
       </SlidersContainer>

@@ -3,7 +3,7 @@ import useImplementationSelection from "../../../hooks/useSoftwareSelection";
 import { SelectionItem as ImplementationSelectionItem } from "../../SelectionList";
 import TwoColGrid, { LeftColumn, RightColumn } from "../../TwoColGrid";
 import SelectionTabs, { SelectionItem } from "../../SelectionTabs";
-import { Easing, NavSection } from "../../../types";
+import { Easing, NavSection, SoftwareImplementation } from "../../../types";
 import RangeInput from "../../RangeInput";
 import theme from "../../../theme";
 import useNavigationSelection from "../../../hooks/useNavigationSelection";
@@ -24,14 +24,15 @@ export default function EasingDurationsSection({
   const {
     selectedEasing,
     setSelectedEasing,
+    selectedMode,
     duration,
     setDuration
   } = useImplementationSelection();
-  const { focusedSection } = useNavigationSelection();
-  const isDisabled = focusedSection !== NavSection.Software;
   const handleChange = (event: React.FormEvent, newValue: any) => {
     setSelectedEasing(newValue);
   };
+  const isDisabledContent =
+    disabled || selectedMode !== SoftwareImplementation.EeaseDuration;
   return (
     <>
       <ImplementationSelectionItem
@@ -44,7 +45,11 @@ export default function EasingDurationsSection({
       />
       <TwoColGrid>
         <LeftColumn>
-          <SelectionTabs value={selectedEasing} onChange={handleChange}>
+          <SelectionTabs
+            value={selectedEasing}
+            onChange={handleChange}
+            disabled={isDisabledContent}
+          >
             <SelectionItem value={Easing.EaseIn}>{Easing.EaseIn}</SelectionItem>
             <SelectionItem value={Easing.EaseOut}>
               {Easing.EaseOut}
@@ -63,9 +68,9 @@ export default function EasingDurationsSection({
             value={duration}
             max={1500}
             min={20}
-            disabled={isDisabled}
+            disabled={isDisabledContent}
             baseColor={theme.fontSecondary}
-            accentColor={isDisabled ? "#bbbfcd" : theme.accentColor}
+            accentColor={isDisabledContent ? "#bbbfcd" : theme.accentColor}
           />
         </RightColumn>
       </TwoColGrid>

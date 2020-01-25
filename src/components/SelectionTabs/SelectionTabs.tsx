@@ -6,6 +6,7 @@ interface Props {
   value: any;
   onChange: (e: FormEvent, value: any) => void;
   children: JSX.Element | JSX.Element[];
+  disabled?: boolean;
 }
 
 export default function SelectionTabs({ children, ...props }: Props) {
