@@ -9,6 +9,7 @@ interface Props {
   subtitle?: string;
   selected?: boolean;
   style?: CSSProperties;
+  disabled?: boolean;
 }
 
 export default function SelectionItem({
@@ -17,13 +18,19 @@ export default function SelectionItem({
   title,
   subtitle,
   selected,
+  disabled,
   style
 }: Props) {
   const handleChange = (e: React.FormEvent) => {
     onChange && onChange(e, value);
   };
   return (
-    <Item onClick={handleChange} selected={selected} style={style}>
+    <Item
+      onClick={handleChange}
+      selected={selected}
+      style={style}
+      disabled={disabled}
+    >
       <ItemTitle>{`${title}:`}</ItemTitle>
       <ItemSubtitle>{subtitle}</ItemSubtitle>
     </Item>

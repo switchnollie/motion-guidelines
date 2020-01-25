@@ -3,20 +3,30 @@ import { SelectionItem } from "../../SelectionList";
 import useImplementationSelection from "../../../hooks/useSoftwareSelection";
 import { SliderWrapper, StyledRangeInput, SlidersContainer } from "./style";
 import theme from "../../../theme";
+import { NavSection } from "../../../types";
+import useNavigationSelection from "../../../hooks/useNavigationSelection";
 
 interface Props {
   selected?: boolean;
   value?: any;
   onChange?: (e: React.FormEvent, value: any) => void;
+  disabled?: boolean;
 }
 
-export default function SpringSection({ selected, value, onChange }: Props) {
+export default function SpringSection({
+  selected,
+  value,
+  onChange,
+  disabled
+}: Props) {
   const {
     tension,
     setTension,
     friction,
     setFriction
   } = useImplementationSelection();
+  const { focusedSection, setFocusedSection } = useNavigationSelection();
+  const isDisabled = focusedSection !== NavSection.Software;
   return (
     <>
       <SelectionItem
@@ -24,6 +34,7 @@ export default function SpringSection({ selected, value, onChange }: Props) {
         onChange={onChange}
         selected={selected}
         value={value}
+        disabled={disabled}
         title="Physikalische Modelle"
       />
       <SlidersContainer>
@@ -37,8 +48,9 @@ export default function SpringSection({ selected, value, onChange }: Props) {
             value={tension}
             max={500}
             min={0}
+            disabled={isDisabled}
             baseColor={theme.fontSecondary}
-            accentColor={theme.accentColor}
+            accentColor={isDisabled ? "#bbbfcd" : theme.accentColor}
           />
         </SliderWrapper>
         <SliderWrapper>
@@ -51,8 +63,9 @@ export default function SpringSection({ selected, value, onChange }: Props) {
             value={friction}
             max={100}
             min={0}
+            disabled={isDisabled}
             baseColor={theme.fontSecondary}
-            accentColor={theme.accentColor}
+            accentColor={isDisabled ? "#bbbfcd" : theme.accentColor}
           />
         </SliderWrapper>
       </SlidersContainer>

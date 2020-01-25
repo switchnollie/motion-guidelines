@@ -10,7 +10,7 @@ import { transparentize } from "polished";
 import { RangeInputProps } from "./index";
 
 export default function RangeInput(props: RangeInputProps) {
-  const { min, max, value, statusText, style, className } = props;
+  const { min, max, value, statusText, style, className, disabled } = props;
   const getRightColor = ({
     baseColor,
     accentColor,
@@ -53,6 +53,7 @@ export default function RangeInput(props: RangeInputProps) {
       )}
       <RangeInputStyled
         type="range"
+        disabled={disabled}
         baseColor={baseColor}
         accentColor={accentColor}
         min={min}

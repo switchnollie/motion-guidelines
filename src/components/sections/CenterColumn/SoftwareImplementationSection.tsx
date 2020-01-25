@@ -5,6 +5,8 @@ import useImplementationSelection from "../../../hooks/useSoftwareSelection";
 import EasingDurationsSection from "./EasingDurationsSection";
 import SpringSection from "./SpringSection";
 import BoxVisualization from "../../BoxVisualization";
+import useNavigationSelection from "../../../hooks/useNavigationSelection";
+import { NavSection } from "../../../types";
 
 interface Props {
   lastAnimate: number;
@@ -16,7 +18,11 @@ export default function SoftwareImplementationSection({
   setLastAnimate
 }: Props) {
   const { selectedMode, setSelectedMode } = useImplementationSelection();
+  const { focusedSection, setFocusedSection } = useNavigationSelection();
+  const isDisabled = focusedSection !== NavSection.Software;
+
   const handleChange = (event: React.FormEvent, newValue: any) => {
+    isDisabled && setFocusedSection(NavSection.Software);
     setSelectedMode(newValue);
   };
   return (
@@ -27,7 +33,11 @@ export default function SoftwareImplementationSection({
         lastAnimate={lastAnimate}
         setLastAnimate={setLastAnimate}
       />
-      <SelectionList value={selectedMode} onChange={handleChange}>
+      <SelectionList
+        value={selectedMode}
+        onChange={handleChange}
+        disabled={isDisabled}
+      >
         <EasingDurationsSection />
         <SpringSection />
       </SelectionList>

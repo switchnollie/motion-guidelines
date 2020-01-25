@@ -9,12 +9,14 @@ interface Props {
   selected?: boolean;
   value?: any;
   onChange?: (e: React.FormEvent, value: any) => void;
+  disabled?: boolean;
 }
 
 export default function EasingDurationsSection({
   selected,
   value,
-  onChange
+  onChange,
+  disabled
 }: Props) {
   const { selectedEasing, setSelectedEasing } = useImplementationSelection();
   const handleChange = (event: React.FormEvent, newValue: any) => {
@@ -27,6 +29,7 @@ export default function EasingDurationsSection({
           onChange={onChange}
           selected={selected}
           value={value}
+          disabled={disabled}
           title="Easing und Dauer"
         />
         <SelectionTabs value={selectedEasing} onChange={handleChange}>

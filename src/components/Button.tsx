@@ -44,13 +44,14 @@ const squaredStyles = css`
 const StyledButton = styled(animated.button)<{
   round?: boolean;
   pulse?: boolean;
+  disabled?: boolean;
 }>`
   ${({ theme: { accentColor, fontInverse }, round, pulse }) => css`
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: ${accentColor};
-    //cursor: pointer;
+    /*cursor: pointer;*/
     outline: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -62,6 +63,9 @@ const StyledButton = styled(animated.button)<{
       height 0.3s ease-out, border-radius 0.3s ease-out;
     &:active {
       background-color: ${darken(0.2, accentColor)};
+    }
+    &:disabled {
+      opacity: 0.5;
     }
     ${round ? roundStyles : squaredStyles}
     ${pulse && pulseStyles}
@@ -78,6 +82,7 @@ interface Props {
   round?: boolean;
   pulse?: boolean;
   onClick?: (event: React.MouseEvent) => any;
+  disabled?: boolean;
 }
 
 export default function Button({

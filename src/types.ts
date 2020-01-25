@@ -5,6 +5,11 @@ export enum Principle {
   Timing
 }
 
+export enum NavSection {
+  Principles,
+  Software
+}
+
 export enum SoftwareImplementation {
   Keyframes,
   Spring

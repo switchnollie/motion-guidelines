@@ -28,7 +28,7 @@ export const AnimatedTooltipMenu = styled(animated.div)`
     padding: 7px;
     background: #fff;
     z-index: 1;
-    //cursor: pointer;
+    /*cursor: pointer;*/
     transition: transform 0.2s ease-out;
     &:hover {
       transform: scale(1.13);

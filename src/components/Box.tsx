@@ -24,7 +24,7 @@ const keyRightStyles = css`
 `;
 const mainBoxStyles = css`
   left: 0;
-  //cursor: pointer;
+  /*cursor: pointer;*/
   &.ease-in {
     transition: left 0.4s ease-in, transform 0.4s ease-out;
   }

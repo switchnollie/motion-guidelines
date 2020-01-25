@@ -2,16 +2,19 @@
 
 import React from "react";
 import styled, { css } from "styled-components";
+import { useSpring, animated, config } from "react-spring";
 
 interface Props {
   leftEmoji: string;
   rightEmoji: string;
   leftLabel: string;
   rightLabel: string;
+  disabled?: boolean;
+  isShown?: boolean;
 }
 
-const Wrapper = styled.div<Props>`
-  ${({ leftEmoji, rightEmoji, leftLabel, rightLabel }) => css`
+const Wrapper = styled(animated.div)<Props>`
+  ${({ leftEmoji, rightEmoji, leftLabel, rightLabel, disabled }) => css`
     position: relative;
     width: 45px;
     .well {
@@ -19,7 +22,7 @@ const Wrapper = styled.div<Props>`
       background: #eee;
       height: 22px;
       border-radius: 11px;
-      //cursor: pointer;
+      /*cursor: pointer;*/
     }
     .toggle {
       opacity: 0;
@@ -29,12 +32,12 @@ const Wrapper = styled.div<Props>`
       width: 100%;
       background: transparent;
       position: absolute;
-      //cursor: pointer;
+      /*cursor: pointer;*/
       z-index: 100;
       ~ .emoji:before {
         content: ${`"\\${leftEmoji}"`};
         position: absolute;
-        color: #000;
+        color: ${disabled ? "rgba(0,0,0,0.5)" : "#000"};
         left: 0;
         top: -4px;
         font-size: 25px;
@@ -68,11 +71,25 @@ const Wrapper = styled.div<Props>`
   `}
 `;
 
-export default function EmojiToggle(props: Props) {
-  console.log(`\\${props.leftEmoji}`);
+export default function EmojiToggle({ isShown, ...props }: Props) {
+  // @ts-ignore
+  const { transform } = useSpring({
+    from: {
+      transform: "translateX(60px)"
+    },
+    to: {
+      transform: isShown ? "translateX(0)" : "translateX(60px)"
+    },
+    config: config.stiff
+  });
   return (
-    <Wrapper {...props}>
-      <input type="checkbox" id="toggle1" className="toggle" />
+    <Wrapper style={{ transform }} {...props}>
+      <input
+        type="checkbox"
+        id="toggle1"
+        className="toggle"
+        disabled={props.disabled}
+      />
       <div className="emoji"></div>
       <label htmlFor="toggle1" className="well"></label>
     </Wrapper>

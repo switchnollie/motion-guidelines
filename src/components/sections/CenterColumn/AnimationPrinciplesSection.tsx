@@ -11,6 +11,7 @@ interface Props {
 
 export default function AnimationPrinciplesSection({ lastAnimate }: Props) {
   const { selectedMode } = usePrincipleSelection();
+
   return (
     <>
       <TwoColGrid>

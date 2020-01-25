@@ -4,11 +4,13 @@ interface Props {
   value: any;
   onChange: (e: FormEvent, value: any) => void;
   children: JSX.Element | JSX.Element[];
+  disabled?: boolean;
 }
 
 export default function SelectionDecorator({
   value,
   onChange,
+  disabled,
   children: childrenProp,
   ...props
 }: Props) {
@@ -26,6 +28,7 @@ export default function SelectionDecorator({
       return React.cloneElement(child, {
         selected,
         onChange,
+        disabled,
         value: childValue
       });
     }

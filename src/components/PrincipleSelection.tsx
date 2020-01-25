@@ -2,6 +2,8 @@ import React from "react";
 import SelectionList, { SelectionItem } from "./SelectionList";
 import { Principle } from "../types";
 import usePrincipleSelection from "../hooks/usePrincipleSelection";
+import useNavigationSelection from "../hooks/useNavigationSelection";
+import { NavSection } from "../types";
 
 const selectionListItems = [
   {
@@ -31,11 +33,14 @@ export default function PrincipleSelection() {
     selectedMode: value,
     setSelectedMode: setValue
   } = usePrincipleSelection();
+  const { focusedSection, setFocusedSection } = useNavigationSelection();
+  const isDisabled = focusedSection !== NavSection.Principles;
   const handleChange = (event: React.FormEvent, newValue: any) => {
+    isDisabled && setFocusedSection(NavSection.Principles);
     setValue(newValue);
   };
   return (
-    <SelectionList value={value} onChange={handleChange}>
+    <SelectionList value={value} onChange={handleChange} disabled={isDisabled}>
       {selectionListItems.map(({ id, title, subtitle }) => (
         <SelectionItem key={id} value={id} title={title} subtitle={subtitle} />
       ))}

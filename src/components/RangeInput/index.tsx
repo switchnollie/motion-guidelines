@@ -13,4 +13,5 @@ export interface RangeInputProps {
   className?: string;
   statusText?: string;
   onChange: (e: ChangeEvent<HTMLInputElement>) => any;
+  disabled?: boolean;
 }

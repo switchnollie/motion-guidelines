@@ -19,8 +19,8 @@ export const ItemSubtitle = styled.p`
   margin: 0;
 `;
 
-export const Item = styled.li<{ selected?: boolean }>`
-  ${({ selected, theme }) => css`
+export const Item = styled.li<{ selected?: boolean; disabled?: boolean }>`
+  ${({ selected, disabled, theme }) => css`
     background-color: ${selected ? theme.accentColor : "unset"};
     color: ${selected ? theme.fontInverse : theme.fontPrimary};
     margin-left: -${theme.columnPadding};
@@ -29,7 +29,8 @@ export const Item = styled.li<{ selected?: boolean }>`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    //cursor: pointer;
+    opacity: ${disabled ? 0.66 : 1};
+    /*cursor: pointer;*/
     transition: background-color 0.2s ease-out;
 
     ${!selected &&
