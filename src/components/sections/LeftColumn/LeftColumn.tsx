@@ -4,7 +4,6 @@ import sectionWahrnehmungImg from "../../../images/SectionWahrnehmung.svg";
 import sectionProzesseImg from "../../../images/SectionProzesse.svg";
 import sectionGestaltgesetzeImg from "../../../images/SectionGestaltgesetze.svg";
 import Column from "../../Column";
-import HsAalenLogo from "../../HsAalenLogo";
 import { StyledTitle, StyledImg } from "./style";
 import { Principle } from "../../../types";
 import usePrincipleSelection from "../../../hooks/usePrincipleSelection";
@@ -75,7 +74,6 @@ export default function LeftColumn({ lastAnimate }: Props) {
           );
         }
       })}
-      <HsAalenLogo />
     </AnimatedColumn>
   );
 }

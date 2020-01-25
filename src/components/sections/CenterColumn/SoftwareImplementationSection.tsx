@@ -27,7 +27,9 @@ export default function SoftwareImplementationSection({
   };
   return (
     <>
-      <SecondTitle>Modellierung in Software</SecondTitle>
+      <SecondTitle hasHighlight={focusedSection === NavSection.Software}>
+        Modellierung in Software
+      </SecondTitle>
       <StyledDivider vertical />
       <BoxVisualization />
       <SelectionList

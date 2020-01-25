@@ -58,7 +58,8 @@ const StyledButton = styled(animated.button)<{
     line-height: 1.75;
     border: none;
     color: ${fontInverse};
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
+      0 2px 4px 0 rgba(14, 30, 37, 0.34);
     transition: background-color 0.2s ease-out, width 0.3s ease-out,
       height 0.3s ease-out, border-radius 0.3s ease-out;
     &:active {

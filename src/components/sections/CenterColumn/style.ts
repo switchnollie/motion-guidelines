@@ -3,16 +3,49 @@ import Divider from "../../Divider";
 import Button from "../../Button";
 import RangeInput from "../../RangeInput";
 
-export const FirstTitle = styled.h2`
-  ${({ theme }) => css`
+export const FirstTitle = styled.h2<{ hasHighlight?: boolean }>`
+  ${({ theme, hasHighlight }) => css`
+    position: relative;
+    height: 1.5em;
+    display: inline-flex;
+    align-items: center;
     color: ${theme.fontPrimary};
+    ${hasHighlight &&
+      `
+      &:after {
+        content: "●";
+        position: absolute;
+        top: 50%;
+        left: calc((${theme.columnPadding} * -1)/ 2);
+        transform: translateY(-50%);
+        color: ${theme.accentColor};
+        font-size: 10px;
+      }
+    `}
   `}
 `;
 
-export const SecondTitle = styled.h2`
-  ${({ theme }) => css`
+export const SecondTitle = styled.h2<{ hasHighlight?: boolean }>`
+  ${({ theme, hasHighlight }) => css`
+    position: relative;
     color: ${theme.fontPrimary};
     margin: 40px 0 20px;
+    height: 1.5em;
+    display: inline-flex;
+    align-items: center;
+
+    ${hasHighlight &&
+      `
+      &:after {
+        content: "●";
+        position: absolute;
+        top: 50%;
+        left: calc((${theme.columnPadding} * -1)/ 2);
+        transform: translateY(-50%);
+        color: ${theme.accentColor};
+        font-size: 10px;
+      }
+    `}
   `}
 `;
 

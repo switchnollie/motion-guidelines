@@ -26,7 +26,9 @@ export default function DemoSelection() {
   };
   return (
     <div style={{ marginTop: 132 }}>
-      <StyledTitle>Umsetzungen</StyledTitle>
+      <StyledTitle hasHighlight={focusedSection === NavSection.Demos}>
+        Umsetzungen
+      </StyledTitle>
       <SelectionList
         value={value}
         onChange={handleChange}

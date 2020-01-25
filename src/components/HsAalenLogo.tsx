@@ -5,7 +5,10 @@ const LogoContainer = styled.div`
   ${({ theme }) => css`
     width: 144px;
     position: absolute;
-    bottom: 20px;
+    opacity: 0.5;
+    top: ${theme.columnPadding};
+    right: ${theme.columnPadding};
+    transition: transform 2s ease-out;
 
     svg {
       width: 100%;
@@ -15,6 +18,6 @@ const LogoContainer = styled.div`
 `;
 
 export default function HsAalenLogo() {
-  const svg = require(`!raw-loader!../images/Hochschule-aalen.svg`);
+  const svg = require(`!raw-loader!../images/HochschuleAalenLogoGrau.svg`);
   return <LogoContainer dangerouslySetInnerHTML={{ __html: svg.default }} />;
 }

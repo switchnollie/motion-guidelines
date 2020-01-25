@@ -25,7 +25,9 @@ export default function CenterColumn({ lastAnimate, setLastAnimate }: Props) {
   return (
     <Column>
       <TopContainer>
-        <FirstTitle>Animationsprinzipien</FirstTitle>
+        <FirstTitle hasHighlight={focusedSection === NavSection.Principles}>
+          Animationsprinzipien
+        </FirstTitle>
         <TopRightContainer>
           <EmojiToggle
             leftEmoji="1F623"

@@ -10,6 +10,10 @@ const Column = styled.div<{ highlightBackground?: boolean }>`
     background-color: ${highlightBackground
       ? theme.accentColor
       : theme.pageBackground};
+    ${highlightBackground &&
+      `box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 2px 4px 0 rgba(14, 30, 37, 0.75);
+      z-index: 1;
+      `}
   `}
 `;
 

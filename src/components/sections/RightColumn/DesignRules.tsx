@@ -1,5 +1,6 @@
 import React from "react";
 import { StyledTitle, ListItem, List } from "./style";
+import { NavSection } from "../../../types";
 
 export default function DesignRules() {
   return (
