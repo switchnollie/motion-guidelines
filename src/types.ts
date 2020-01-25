@@ -7,7 +7,8 @@ export enum Principle {
 
 export enum NavSection {
   Principles,
-  Software
+  Software,
+  Demos
 }
 
 export enum SoftwareImplementation {
