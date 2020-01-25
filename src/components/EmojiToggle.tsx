@@ -13,8 +13,8 @@ interface Props {
   isShown?: boolean;
 }
 
-const Wrapper = styled(animated.div)<Props>`
-  ${({ leftEmoji, rightEmoji, leftLabel, rightLabel, disabled }) => css`
+const AnimatedWrapper = styled(animated.div)<Props>`
+  ${({ leftEmoji, rightEmoji, leftLabel, rightLabel, disabled, hidden }) => css`
     position: relative;
     width: 45px;
     .well {
@@ -75,15 +75,15 @@ export default function EmojiToggle({ isShown, ...props }: Props) {
   // @ts-ignore
   const { transform } = useSpring({
     from: {
-      transform: "translateX(60px)"
+      transform: "translateX(57px)"
     },
     to: {
-      transform: isShown ? "translateX(0)" : "translateX(60px)"
+      transform: isShown ? "translateX(0)" : "translateX(57px)"
     },
     config: config.stiff
   });
   return (
-    <Wrapper style={{ transform }} {...props}>
+    <AnimatedWrapper style={{ transform }} {...props}>
       <input
         type="checkbox"
         id="toggle1"
@@ -92,6 +92,6 @@ export default function EmojiToggle({ isShown, ...props }: Props) {
       />
       <div className="emoji"></div>
       <label htmlFor="toggle1" className="well"></label>
-    </Wrapper>
+    </AnimatedWrapper>
   );
 }

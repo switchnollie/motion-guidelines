@@ -18,7 +18,9 @@ export default function CenterColumn({ lastAnimate, setLastAnimate }: Props) {
   const { selectedMode } = usePrincipleSelection();
   const { focusedSection } = useNavigationSelection();
   const hasEmojiToggle = !!(
-    selectedMode !== null && selectedMode !== Principle.Anticipation
+    focusedSection === NavSection.Principles &&
+    selectedMode !== null &&
+    selectedMode !== Principle.Anticipation
   );
   return (
     <Column>
@@ -33,7 +35,10 @@ export default function CenterColumn({ lastAnimate, setLastAnimate }: Props) {
             isShown={hasEmojiToggle}
             disabled={focusedSection !== NavSection.Principles}
           />
-          <AnimatedButton setLastAnimate={setLastAnimate} />
+          <AnimatedButton
+            setLastAnimate={setLastAnimate}
+            disabled={focusedSection !== NavSection.Principles}
+          />
         </TopRightContainer>
       </TopContainer>
       <AnimationPrinciplesSection

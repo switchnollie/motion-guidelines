@@ -25,7 +25,7 @@ export default function SpringSection({
     friction,
     setFriction
   } = useImplementationSelection();
-  const { focusedSection, setFocusedSection } = useNavigationSelection();
+  const { focusedSection } = useNavigationSelection();
   const isDisabled = focusedSection !== NavSection.Software;
   return (
     <>

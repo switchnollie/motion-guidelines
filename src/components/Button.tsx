@@ -1,7 +1,7 @@
 import React, { useState, ReactElement, CSSProperties } from "react";
 import styled, { css, keyframes } from "styled-components";
 import theme from "../theme";
-import { darken } from "polished";
+import { darken, lighten } from "polished";
 import { useSpring, animated } from "react-spring";
 
 const Pulse = keyframes`
@@ -65,7 +65,9 @@ const StyledButton = styled(animated.button)<{
       background-color: ${darken(0.2, accentColor)};
     }
     &:disabled {
-      opacity: 0.5;
+      background-color: ${lighten(0.1, accentColor)} !important;
+      box-shadow: 0 1.5px 3px rgba(0, 0, 0, 0.08),
+        0 1.5px 3px rgba(0, 0, 0, 0.0115);
     }
     ${round ? roundStyles : squaredStyles}
     ${pulse && pulseStyles}

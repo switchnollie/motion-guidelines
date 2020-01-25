@@ -6,9 +6,10 @@ import usePrincipleSelection from "../../../hooks/usePrincipleSelection";
 
 interface Props {
   setLastAnimate: (x: number) => any;
+  disabled?: boolean;
 }
 
-export default function AnimatedButton({ setLastAnimate }: Props) {
+export default function AnimatedButton({ setLastAnimate, disabled }: Props) {
   const { selectedMode } = usePrincipleSelection();
   const [isTooltipShown, setIsTooltipShown] = useState(false);
   const toggleTooltip = () => setIsTooltipShown(!isTooltipShown);
@@ -29,6 +30,7 @@ export default function AnimatedButton({ setLastAnimate }: Props) {
               }
             : handleButtonClick
         }
+        disabled={disabled}
         pulse={isInAnticipationMode}
       >
         {isInAnticipationMode ? (
