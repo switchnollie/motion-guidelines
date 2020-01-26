@@ -51,7 +51,7 @@ const lineData: LineConfig[] = [
     isBad: true,
     path: "M0 88L64.8433735 5.68434189e-14 124.5 5.68434189e-14",
     transform: "translate(-677 -189) translate(677 189) translate(3 1)",
-    animationDuration: 1005
+    animationDuration: 1000
   },
   {
     id: `${Principle.FollowThrough}-3`,
@@ -59,7 +59,8 @@ const lineData: LineConfig[] = [
     isBad: true,
     path: "M23 88L87.8181818 5.68434189e-14 116 1.13686838e-13",
     transform: "translate(-677 -189) translate(677 189) translate(3 1)",
-    animationDuration: 1005
+    animationDuration: 600,
+    animationDelay: 300
   },
   {
     id: `${Principle.FollowThrough}-4`,
@@ -67,7 +68,8 @@ const lineData: LineConfig[] = [
     isBad: true,
     path: "M51 88L116 0",
     transform: "translate(-677 -189) translate(677 189) translate(3 1)",
-    animationDuration: 1005
+    animationDuration: 400,
+    animationDelay: 600
   },
   {
     id: `${Principle.Timing}-0`,
@@ -76,7 +78,7 @@ const lineData: LineConfig[] = [
     path:
       "M0 87.802C13 37.942 23.167 9.148 30.5 1.423c5.5-4.74 7.5 3.88 12 3.88 5 0 5-2.5 13-2.5 25.599-.392 48.599-.392 69 0",
     transform: "translate(-677 -189) translate(677 189) translate(3 1.198)",
-    animationDuration: 960
+    animationDuration: 600
   },
   {
     id: `${Principle.Timing}-1`,
@@ -85,7 +87,7 @@ const lineData: LineConfig[] = [
     animationDelay: 400,
     path: "M25.422 87.802c12.17-56.666 27.319-85 45.445-85H125",
     transform: "translate(-677 -189) translate(677 189) translate(3 1.198)",
-    animationDuration: 560
+    animationDuration: 500
   },
   {
     id: `${Principle.Timing}-2`,
