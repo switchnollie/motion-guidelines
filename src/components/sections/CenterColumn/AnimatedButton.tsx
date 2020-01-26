@@ -11,15 +11,18 @@ interface Props {
 }
 
 export default function AnimatedButton({ setLastAnimate, disabled }: Props) {
-  const { selectedMode } = usePrincipleSelection();
+  const { selectedMode, isUglyToggled } = usePrincipleSelection();
   const { focusedSection } = useNavigationSelection();
   const [isTooltipShown, setIsTooltipShown] = useState(false);
   const toggleTooltip = () => setIsTooltipShown(!isTooltipShown);
   const handleButtonClick = () => setLastAnimate(Date.now());
+  const isInPrinciplesSection = focusedSection === NavSection.Principles;
   const isInAnticipationMode =
-    selectedMode === Principle.Anticipation &&
-    focusedSection === NavSection.Principles;
-  const isInTimingMode = selectedMode === Principle.Timing;
+    selectedMode === Principle.Anticipation && isInPrinciplesSection;
+  const isInTimingMode =
+    selectedMode === Principle.Timing && isInPrinciplesSection;
+  const isInSquashMode =
+    selectedMode === Principle.SquashNStretch && isInPrinciplesSection;
   const svg = require(`!raw-loader!../../../images/play-arrow.svg`);
   const tooltipMenuItems = ["🦄", "🦍", "🐙", "🐠"];
   return (
@@ -36,6 +39,7 @@ export default function AnimatedButton({ setLastAnimate, disabled }: Props) {
         }
         disabled={disabled}
         pulse={isInAnticipationMode}
+        uglyAnimation={isInSquashMode && isUglyToggled}
       >
         {isInAnticipationMode ? (
           <div

@@ -1,7 +1,7 @@
 import React, { useState, ReactElement, CSSProperties } from "react";
 import styled, { css, keyframes } from "styled-components";
 import theme from "../theme";
-import { darken, lighten } from "polished";
+import { shade, lighten } from "polished";
 import { useSpring, animated } from "react-spring";
 
 const Pulse = keyframes`
@@ -17,16 +17,21 @@ const Pulse = keyframes`
 `;
 
 const pulseStyles = css`
-  &::after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    animation: ${Pulse} 2s infinite;
-  }
+  ${({ theme }) => css`
+    &:hover:not(:focus) {
+      background-color: ${shade(0.2, theme.accentColor)};
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      animation: ${Pulse} 2s infinite;
+    }
+  `}
 `;
 
 const roundStyles = css`
@@ -63,7 +68,7 @@ const StyledButton = styled(animated.button)<{
     transition: background-color 0.2s ease-out, width 0.3s ease-out,
       height 0.3s ease-out, border-radius 0.3s ease-out;
     &:active {
-      background-color: ${darken(0.2, accentColor)};
+      background-color: ${shade(0.2, accentColor)};
     }
     &:disabled {
       background-color: ${lighten(0.1, accentColor)} !important;
@@ -86,6 +91,7 @@ interface Props {
   pulse?: boolean;
   onClick?: (event: React.MouseEvent) => any;
   disabled?: boolean;
+  uglyAnimation?: boolean;
 }
 
 export default function Button({
@@ -93,20 +99,31 @@ export default function Button({
   style,
   round,
   pulse,
+  uglyAnimation,
   ...props
 }: Props) {
   const [isPressed, setIsPressed] = useState(false);
-  const { scale } = useSpring(
-    isPressed
-      ? { scale: 0.9, config: downConfig }
-      : { scale: 1, config: upConfig }
-  );
+  const animateInConfig = uglyAnimation
+    ? { scaleX: 0.9, config: downConfig }
+    : { scale: 0.9, config: downConfig };
+  const animateOutConfig = uglyAnimation
+    ? { scaleX: 1, config: downConfig }
+    : { scale: 1, config: upConfig };
+  // @ts-ignore
+  const styleProps = useSpring(isPressed ? animateInConfig : animateOutConfig);
+
+  const transform = uglyAnimation
+    ? styleProps?.scaleX?.interpolate((x: number) => `scaleX(${x})`)
+    : styleProps?.scale?.interpolate((x: number) => `scale(${x})`);
   return (
     <StyledButton
       {...props}
       onMouseDown={() => setIsPressed(true)}
       onMouseUp={() => setIsPressed(false)}
-      style={{ transform: scale.interpolate(x => `scale(${x})`), ...style }}
+      style={{
+        transform,
+        ...style
+      }}
       round={round}
       pulse={pulse}
     >

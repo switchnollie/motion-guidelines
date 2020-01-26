@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Column from "../../Column";
 import AnimatedButton from "./AnimatedButton";
 import AnimationPrinciplesSection from "./AnimationPrinciplesSection";
@@ -15,8 +15,13 @@ interface Props {
 }
 
 export default function CenterColumn({ lastAnimate, setLastAnimate }: Props) {
-  const { selectedMode } = usePrincipleSelection();
+  const {
+    selectedMode,
+    isUglyToggled,
+    setIsUglyToggled
+  } = usePrincipleSelection();
   const { focusedSection } = useNavigationSelection();
+
   const hasEmojiToggle = !!(
     focusedSection === NavSection.Principles &&
     selectedMode !== null &&
@@ -34,6 +39,8 @@ export default function CenterColumn({ lastAnimate, setLastAnimate }: Props) {
             rightEmoji="1F60D"
             leftLabel=""
             rightLabel=""
+            value={!isUglyToggled}
+            onChange={e => setIsUglyToggled(!e.target.checked)}
             isShown={hasEmojiToggle}
             disabled={focusedSection !== NavSection.Principles}
           />

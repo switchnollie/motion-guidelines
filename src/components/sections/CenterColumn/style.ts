@@ -13,12 +13,16 @@ export const FirstTitle = styled.h2<{ hasHighlight?: boolean }>`
     ${hasHighlight &&
       `
       &:after {
-        content: "●";
+        content: "";
         position: absolute;
+        box-shadow: 0px 0px 2px ${theme.accentColor};
         top: 50%;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
         left: calc((${theme.columnPadding} * -1)/ 2);
         transform: translateY(-50%);
-        color: ${theme.accentColor};
+        background-color: ${theme.accentColor};
         font-size: 10px;
       }
     `}
@@ -37,12 +41,16 @@ export const SecondTitle = styled.h2<{ hasHighlight?: boolean }>`
     ${hasHighlight &&
       `
       &:after {
-        content: "●";
+        content: "";
         position: absolute;
+        box-shadow: 0px 0px 2px ${theme.accentColor};
         top: 50%;
         left: calc((${theme.columnPadding} * -1)/ 2);
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
         transform: translateY(-50%);
-        color: ${theme.accentColor};
+        background-color: ${theme.accentColor};
         font-size: 10px;
       }
     `}

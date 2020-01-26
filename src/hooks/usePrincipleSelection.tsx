@@ -11,11 +11,15 @@ import { Principle } from "../types";
 interface PrincipleSelectionState {
   selectedMode: Principle | null;
   setSelectedMode: Dispatch<SetStateAction<Principle | null>>;
+  isUglyToggled: boolean;
+  setIsUglyToggled: Dispatch<SetStateAction<boolean>>;
 }
 
 const defaultPrincipleSelectionState: PrincipleSelectionState = {
   selectedMode: null,
-  setSelectedMode: (): void => {}
+  setSelectedMode: (): void => {},
+  isUglyToggled: false,
+  setIsUglyToggled: (): void => {}
 };
 
 export const PrincipleSelectionContext = createContext<PrincipleSelectionState>(
@@ -28,10 +32,11 @@ export const PrincipleSelectionProvider = ({
   children: ReactNode;
 }) => {
   const [selectedMode, setSelectedMode] = useState<Principle | null>(null);
+  const [isUglyToggled, setIsUglyToggled] = useState(false);
 
   return (
     <PrincipleSelectionContext.Provider
-      value={{ selectedMode, setSelectedMode }}
+      value={{ selectedMode, setSelectedMode, isUglyToggled, setIsUglyToggled }}
     >
       {children}
     </PrincipleSelectionContext.Provider>

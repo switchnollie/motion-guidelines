@@ -8,3 +8,5 @@ export const StyledImg = styled.img`
   width: 95%;
   margin-bottom: 18px;
 `;
+
+export const MainTitle = styled.h1``;
