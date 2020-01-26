@@ -13,9 +13,13 @@ export default function RightColumn() {
   const { focusedSection } = useNavigationSelection();
   let ScreenContent = null;
   if (selectedDemo === 0) {
-    ScreenContent = <iframe name="hero" src="http://127.0.0.1:3000/material" />;
+    ScreenContent = (
+      <iframe name="hero" src={`${process.env.REACT_APP_URL}/material`} />
+    );
   } else if (selectedDemo === 1) {
-    ScreenContent = <iframe name="fluent" src="http://127.0.0.1:3000/fluent" />;
+    ScreenContent = (
+      <iframe name="fluent" src={`${process.env.REACT_APP_URL}/fluent`} />
+    );
   }
   return (
     <Column>
