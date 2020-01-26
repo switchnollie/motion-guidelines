@@ -4,6 +4,7 @@ import { Principle } from "../../types";
 export interface Props {
   mode: Principle | null;
   lastAnimate: number;
+  badAnimation?: boolean;
 }
 
 export interface LineLengthState {
@@ -21,4 +22,7 @@ export interface LineConfig {
   animationDuration: number;
   animationDelay?: number;
   transform?: string;
+  isBad: boolean;
+  fill?: string;
+  fillOpacity?: number;
 }

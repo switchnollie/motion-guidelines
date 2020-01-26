@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default function AnimationPrinciplesSection({ lastAnimate }: Props) {
-  const { selectedMode } = usePrincipleSelection();
+  const { selectedMode, isUglyToggled } = usePrincipleSelection();
 
   return (
     <>
@@ -19,7 +19,11 @@ export default function AnimationPrinciplesSection({ lastAnimate }: Props) {
           <PrincipleSelection />
         </LeftColumn>
         <RightColumn>
-          <LineChart lastAnimate={lastAnimate} mode={selectedMode} />
+          <LineChart
+            badAnimation={isUglyToggled}
+            lastAnimate={lastAnimate}
+            mode={selectedMode}
+          />
         </RightColumn>
       </TwoColGrid>
     </>

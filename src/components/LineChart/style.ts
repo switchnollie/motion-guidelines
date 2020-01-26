@@ -8,6 +8,7 @@ export const AnimatedLine = styled.path<{
   lineLength: number | undefined;
 }>`
   ${({ animationDuration, lineLength, animationDelay, theme }) => css`
+    fill: none;
     stroke: ${theme.accentColor};
     stroke-dasharray: ${lineLength};
     stroke-dashoffset: ${lineLength};
