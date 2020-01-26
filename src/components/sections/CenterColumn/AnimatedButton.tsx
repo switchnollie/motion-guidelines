@@ -62,6 +62,7 @@ export default function AnimatedButton({ setLastAnimate, disabled }: Props) {
           isOpen={isTooltipShown}
           setIsOpen={setIsTooltipShown}
           items={tooltipMenuItems}
+          uglyAnimation={isInTimingMode && isUglyToggled}
         />
       )}
     </div>

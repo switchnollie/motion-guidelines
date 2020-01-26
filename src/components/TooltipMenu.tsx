@@ -62,15 +62,35 @@ interface Props {
   isOpen: boolean;
   setIsOpen: Dispatch<SetStateAction<boolean>>;
   items: string[];
+  uglyAnimation?: boolean;
 }
 
-export default function TooltipMenu({ isOpen, setIsOpen, items }: Props) {
+export default function TooltipMenu({
+  isOpen,
+  setIsOpen,
+  items,
+  uglyAnimation
+}: Props) {
   const containerSpringRef = useRef<ReactSpringHook>(null);
+  const itemsTransitionsRef = useRef<ReactSpringHook>(null);
+  const baseConfigTransition = {
+    ref: itemsTransitionsRef,
+    unique: true,
+    from: { opacity: 0, transform: "scale(0)" },
+    enter: { opacity: 1, transform: "scale(1)" },
+    leave: { opacity: 0, transform: "scale(0)" }
+  };
+  const animateInConfigTransition = uglyAnimation
+    ? { config: config.stiff, trail: 200 / items.length }
+    : { config: config.wobbly, trail: 400 / items.length };
+  const animateOutConfigTransition = uglyAnimation
+    ? { config: { tension: 310, friction: 25 }, trail: 100 / items.length }
+    : { config: config.gentle, trail: 200 / items.length };
   // @ts-ignore
   const { transf, opacity } = useSpring({
     ref: containerSpringRef,
     config: {
-      tension: 400,
+      tension: uglyAnimation ? 100 : 400,
       friction: 20
     },
     from: {
@@ -82,21 +102,21 @@ export default function TooltipMenu({ isOpen, setIsOpen, items }: Props) {
       transf: isOpen ? [0, 1] : [-25, 0.5]
     }
   });
-  const itemsTransitionsRef = useRef<ReactSpringHook>(null);
-  const itemsTransitions = useTransition(isOpen ? items : [], item => item, {
-    ref: itemsTransitionsRef,
-    unique: true,
-    config: config.stiff,
-    trail: 200 / items.length,
-    from: { opacity: 0, transform: "scale(0)" },
-    enter: { opacity: 1, transform: "scale(1)" },
-    leave: { opacity: 0, transform: "scale(0)" }
-  });
+  const itemsTransitions = useTransition(
+    isOpen ? items : [],
+    item => item,
+    isOpen
+      ? {
+          ...baseConfigTransition,
+          ...animateInConfigTransition
+        }
+      : { ...baseConfigTransition, ...animateOutConfigTransition }
+  );
   useChain(
     isOpen
       ? [containerSpringRef, itemsTransitionsRef]
       : [itemsTransitionsRef, containerSpringRef],
-    [0, isOpen ? 0.1 : 0.3]
+    [0, isOpen ? 0.2 : 0.1]
   );
   return (
     <AnimatedTooltipMenu
