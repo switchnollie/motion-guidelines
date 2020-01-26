@@ -73,7 +73,7 @@ export default function LeftColumn({ lastAnimate }: Props) {
           return (
             <AnimatedImg
               src={sectionWahrnehmungImg}
-              style={{ ...props }}
+              style={{ flex: 1, ...props }}
               key={key}
             />
           );
@@ -81,7 +81,7 @@ export default function LeftColumn({ lastAnimate }: Props) {
           return (
             <AnimatedImg
               src={sectionProzesseImg}
-              style={{ ...props }}
+              style={{ flex: 1, ...props }}
               key={key}
             />
           );
@@ -89,7 +89,7 @@ export default function LeftColumn({ lastAnimate }: Props) {
           return (
             <AnimatedImg
               src={sectionGestaltgesetzeImg}
-              style={{ ...props }}
+              style={{ flex: 1, ...props }}
               key={key}
             />
           );

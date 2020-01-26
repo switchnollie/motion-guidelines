@@ -2,6 +2,8 @@ import styled, { css } from "styled-components";
 
 const Column = styled.div<{ highlightBackground?: boolean }>`
   ${({ highlightBackground, theme }) => css`
+    flex-direction: column;
+    display: flex;
     height: 100vh;
     flex: 1;
     position: relative;

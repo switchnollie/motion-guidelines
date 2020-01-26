@@ -1,8 +1,9 @@
 import React, { ReactElement } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import phoneImgPath from "../images/DeviceMockup.png";
 
-const PhoneContainer = styled.div`
+const PhoneContainer = styled.div<{ active: boolean }>`
+  ${({ active }) => css`
   position: absolute;
   height: 584px;
   width: 315px;
@@ -13,17 +14,21 @@ const PhoneContainer = styled.div`
   background-image: url("${phoneImgPath}");
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+  transform: ${active ? `translateX(0)` : `translateX(100px)`};
 
   & > * {
     width: 100%;
     height: 100%;
   }
+`}
 `;
 
 interface Props {
-  children?: ReactElement;
+  children?: ReactElement | null;
+  active?: boolean;
 }
 
-export default function SmartphoneFrame({ children, ...props }: Props) {
-  return <PhoneContainer>{children}</PhoneContainer>;
+export default function SmartphoneFrame({ children, active, ...props }: Props) {
+  return <PhoneContainer active={!!active}>{children}</PhoneContainer>;
 }

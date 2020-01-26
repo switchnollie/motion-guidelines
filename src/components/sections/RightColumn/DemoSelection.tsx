@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { StyledTitle } from "./style";
 import SelectionList, { SelectionItem } from "../../SelectionList";
 import { NavSection } from "../../../types";
@@ -16,8 +16,13 @@ const selectionListItems = [
     subtitle: "Microsoft"
   }
 ];
-export default function DemoSelection() {
-  const [value, setValue] = useState<boolean | null>(null);
+export default function DemoSelection({
+  value,
+  setValue
+}: {
+  value: any;
+  setValue: (v: any) => any;
+}) {
   const { focusedSection, setFocusedSection } = useNavigationSelection();
   const isDisabled = focusedSection !== NavSection.Demos;
   const handleChange = (event: React.FormEvent, newValue: any) => {
