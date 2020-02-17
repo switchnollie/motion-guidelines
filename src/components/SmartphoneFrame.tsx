@@ -9,7 +9,7 @@ const PhoneContainer = styled.div<{ active: boolean }>`
   width: 315px;
   right: -25px;
   bottom: -65px;
-  padding: 65px 29px 111px 65px;
+  padding: 65px 23px 115px 65px;
   box-sizing: border-box;
   background-image: url("${phoneImgPath}");
   background-repeat: no-repeat; /* Do not repeat the image */

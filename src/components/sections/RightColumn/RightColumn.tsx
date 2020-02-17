@@ -14,11 +14,14 @@ export default function RightColumn() {
   let ScreenContent = null;
   if (selectedDemo === 0) {
     ScreenContent = (
-      <iframe name="hero" src={`${process.env.REACT_APP_URL}:3000/material`} />
+      <iframe name="hero" src="/material" />
     );
   } else if (selectedDemo === 1) {
     ScreenContent = (
-      <iframe name="fluent" src={`${process.env.REACT_APP_URL}:3000/fluent`} />
+      <iframe style={{ transform: "scale(0.8)",
+        transformOrigin: "0 0",
+        width: "125%",
+        height: "125%"}} name="fluent" src="/fluent" />
     );
   }
   return (
