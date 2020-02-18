@@ -1,0 +1,16 @@
+service: motion-guidelines
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  api:
+    handler: functions/server.handler
+    events:
+      - http:
+          path: / # this matches the base path
+          method: ANY
+      - http:
+          path: /{any+} # this matches any path, the token 'any' doesn't mean anything special
+          method: ANY
